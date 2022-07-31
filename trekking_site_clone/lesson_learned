@@ -1,0 +1,54 @@
+1. icons are treated as fonts. So to increase size, color,border, treat it like a font.
+2. div.abc and .abc are not same. div.abc gets more points in calculation. Hence has more specificity. 
+3. dont panic if you have to use margin, padding and height or weight to the inline element. Just make the element block by changing display.
+4. /* to contain the video in the div , just set width:100%. */
+5. max-height will make the div responsive and object-fit cover will stretch the item to cover the whole container from all sides.
+6. if the position absolute wont work , jsut give top and left 0.
+7. if the element is made absolute, it willl overlap the next element to it. However, if there is no next element to get overlapped upon, the absolute element wont get overlapped and jsut make an space(not sure.) 
+8. after:: element also starts from the beggining like before.
+9. an alternative of button is to apply background and padding.
+10. use col-number if you want to apply the col-number in all breakpoints.
+11. text-align center will center the text in the middle of that div.
+12. the elment will consider space as well.
+eg: <span> abc</span>
+here before abc there is a space which will show in html page as well.
+But if i put more space than one, that will not be considered and just one space will be allocated even if i give multiple space.
+
+13. gutter-x:
+gutter-x would not work when padding-x is set to 0 becuase gutter is simply a horizontal padding of the column.
+
+14. margin-0 of container:
+Sometimes we set the margin of container to 0, and that is why our elment is not aligned in the middle horizontally. By default margin of container is set to auto.
+
+15. row and col dont have position specified. thats why sometimes the element inside col may overflow the col when the psosition of that element is absolute, because the element is positioned to the container as the container's position is by default relative.
+
+16. when the element is position absolute, it is no longer positioned to its parent unless and until the parent is positioned. That is why sometimes,  for unpositioned parent, even overflow is hidden, the absolute element inside it may overflow, because it is not positioned to its parent.
+
+17. padding, margin and border cant be applied in a tr. effect will be seen but that would not work. 
+border is not even seen though.
+
+18. ouline cant be applied in just one side as border
+
+19. because you cant apply box-shadow in all sides and is only applicable in right and bottom, you can use blur and speed to 
+apply shadow effect in all sides of the box.
+eg:box-shadow: 2px 2px 2px(blur) 1px(spread) rgba(0, 0, 0, 0.2);
+alt shift will select the charcters in both direction.
+
+20. Sometimes, the element may not get in the right position. In that case, try checking the position of that element.
+See the computed section in inspect and check their margin, padding, border and position.
+
+21. when you set top:100, the bottom would automatically set according to the .
+22. by default, background images repeats, so make sure to set no-repeat.
+23. before and after elements will start from top of the element it is before over the padding or bordered area and not after padding or border in both box-sizing:content-box and border-box.
+Not just pseudo elements but every other elements would start from there if the position is absolute and top and left is 0.
+24. margin:auto wont work when position is absolute.
+25. sometimes, the effect of the property may not get removed because the parent of that element may have set that property.
+for eg: i have div1 and div2(child of div1) and both of them have element h1. Now if div1 h1{top:20px}, the
+h1 of div2 will also have the same effect because div1 being the parent, when h1 is set, it is also
+applicable for irs cildren.
+26. if we add text in tr without td, then that text will not be aligned as expected.
+27. 
+
+
+
+

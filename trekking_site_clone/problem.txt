@@ -1,0 +1,2 @@
+1. in trip-section, empty a are coming which is interrupting hover effects.
+2. transition is not working in .button-box in hover effects.

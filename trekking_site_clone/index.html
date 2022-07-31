@@ -1,0 +1,2705 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome cdn using kit-->
+    <script src="https://kit.fontawesome.com/f0894016da.js" crossorigin = "anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- link for css  -->
+  <link rel="stylesheet" href="style.css">
+    <!-- css cdn for owl-carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- another css(default) cdn  for owl-carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- link for js fancy -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+
+    <!-- link for google fonts -->
+    <!-- two lines below are not compulsory. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- this is important. -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- link for images of trekking site -->
+    <link rel="icon" href="https://www.discoveryworldtrekking.com/frontend/assets/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="https://www.discoveryworldtrekking.com/frontend/assets/images/favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://www.discoveryworldtrekking.com/frontend/assets/images/favicon-180x180.png">
+
+
+    <!-- link for fonts -->
+    <link rel="preload" href="https://www.discoveryworldtrekking.com/frontend/assets/fonts/Louize-DisplayRegular.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="https://www.discoveryworldtrekking.com/frontend/assets/fonts/Louize-DisplayBold.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="https://www.discoveryworldtrekking.com/frontend/assets/fonts/CerebriSans-Book.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="https://www.discoveryworldtrekking.com/frontend/assets/fonts/Rustico-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="https://www.discoveryworldtrekking.com/frontend/assets/fonts/CerebriSans-Heavy.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="https://www.discoveryworldtrekking.com/frontend/assets/fonts/CerebriSans-Light.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="https://www.discoveryworldtrekking.com/frontend/assets/fonts/CerebriSans-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="https://www.discoveryworldtrekking.com/frontend/assets/fonts/CerebriSans-Bold.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="https://www.discoveryworldtrekking.com/frontend/assets/fonts/CerebriSans-Medium.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="https://www.discoveryworldtrekking.com/frontend/assets/fonts/CerebriSans-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="https://www.discoveryworldtrekking.com/frontend/assets/fonts/FreightText_BookItalic.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="https://www.discoveryworldtrekking.com/frontend/assets/css/style.min.css?v=1.0.1&amp;cb=SRV_CACHE_BUSTER_2022_10_03" as="style">
+    <link rel="stylesheet" href="https://www.discoveryworldtrekking.com/frontend/assets/css/style.min.css?v=1.0.1&amp;cb=SRV_CACHE_BUSTER_2022_10_03">
+    <link rel="preload" href="https://www.discoveryworldtrekking.com/frontend/assets/css/fancybox-jqueryui-pace-custom.css?v=1.0.1&amp;cb=SRV_CACHE_BUSTER_2022_10_03" as="style">
+    <link rel="stylesheet" href="https://www.discoveryworldtrekking.com/frontend/assets/css/fancybox-jqueryui-pace-custom.css?v=1.0.1&amp;cb=SRV_CACHE_BUSTER_2022_10_03">
+
+    
+
+    <title>trekking-site</title>
+
+   
+
+  </head>
+  <body>
+
+    <section class="root">
+      <!-- notification bar starts -->
+      <section class="notification-bar">
+        <div class="container p-0">
+          <div class="row d-flex justify-content-center pt-1 ">
+            <div class="col-md-4 text-center ">
+              <a href="https://www.discoveryworldtrekking.com/blog/nepal-trek-booking-open">nepal trek booking open for 2022/23</a>
+            </div>
+            </div>
+            <div class="row d-flex justify-content-center ">
+              <div class="col-md-4" style="margin-top:-3px;">
+                <div class="header-underline">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>     
+    <!-- notification bar ends -->
+     
+
+    <!-- header-top starts -->
+    <!-- mt-3 -->
+    <header class="header-top">
+      <div class="container px-4">
+        <div class="row">
+          <div class="col-md-3 mt-4 logo">
+          <img src="./images/logo.svg" alt="">
+          </div>
+          <div class="col-md-9 mt-4">
+            <div class="quick-contact d-flex">
+              <div class="quick-contact-desktop d-flex">
+                <div class="quick-contact-desktop-hidden"></div>
+              <div class="quick-contact-desktop-questions">
+                <span class="quick-contact-desktop-label">quick questions? email us</span>
+                <span class="email">info@discoveryworldtrekking.com</span>
+              </div>
+              <div class="quick-contact-desktop-options d-flex">
+                <div class="info">
+                  <span class="quick-contact-desktop-label">talk to an expert(paul)</span>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                <a href=""><i class="fa-brands fa-viber"></i></a>
+                <a class="tel" href="">+9779840055491</a>
+                  </div>
+                
+                
+                <figure class="quick-contact-desktop-author">
+                  <img src="./images/quick-contact-image.jpg" width="40px" height="40px" alt="">
+                </div>
+                
+               </div>
+                <!-- header-top-for-mobile -->
+                <div class="quick-contact-mobile d-flex">
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-viber"></i>
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+                <!-- header-top-for-mobile -->
+  
+              </div>
+              
+               
+               
+  
+            </div>
+          </div>
+      </div>
+    </header>
+    <!-- header-top ends -->
+
+
+    <!-- header-bottom starts -->
+    <header class="header-bottom">
+      <div class="container p-0">
+        <div class="row m-0">
+          <div class="col-md-12 px-4">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Packages <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Day Tours</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Country Tours</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Best Deals</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Travel Info</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Reviews</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link"  href="#">Contact Us</a>
+                  </li>
+                </ul>
+                <div class="search-icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+            </nav>
+          </div>
+      
+      </div>
+      </div>
+
+    </header>
+    <!-- header-bottom ends -->
+
+
+    <!-- video-box starts -->
+    <section class="video-box">
+      <div class="container-fluid p-0">
+        <div class="row m-0">
+          <div class="col p-0">
+            <div class="hero-video">
+              <video src="https://www.discoveryworldtrekking.com/media/965/discovery-himalaya-trekking.mp4" class="hero-video" autoplay= "autoplay" muted="muted"></video>
+              <div class="video-header">
+                <a data-fancybox="hero-video" 
+                href="https://www.youtube.com/watch?v=18bJD7M0KAI"
+                 class="video-frame-player" aria-label="discovery himalaya trekking
+                  video">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+                <h2 class="video-header-title">Your Adventure Starts Here</h2>
+              </div>
+              
+              <div class="form-box d-flex justify-content-center w-100">
+                <form action="" style="position:relative;">
+                  <input class="form-control" type="text" placeholder="find the perfect trip for you" id="hero-search" >
+                  <label for="search" class="hidden-search"></label>
+                  <span class="search-form__icon"> <svg class="icon icon--normal">
+                    <use xlink:href="https://www.discoveryworldtrekking.com/frontend/assets/images/symbol-defs.svg#icon-search"
+                     x="0" y="0"></use> 
+                    </svg> 
+                  </span>
+                </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- video-box ends -->
+
+
+    <!--carousel starts  -->
+    <section class="carousel-box">
+    <div class="container px-0 m-0">
+      <div class="row px-0 m-0">
+        <div class="col px-0 m-0">
+          <div class="owl-1 owl-carousel owl-theme owl-carousel-box-height-650">
+            <div class="item">
+              <img src="images/slider_1.jpg" alt="">
+                <div class="trip-advisor__content" >
+                  <div class="trip-advisor__header">
+                    <span>Reviews from</span>
+                     <a rel="noopener" href="https://www.tripadvisor.com/Attraction_Review-g293890-d6592958-Reviews-Discovery_World_Trekking-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html" target="_blank"> <img class="lozad" data-src="https://www.discoveryworldtrekking.com/frontend/assets/images/tripadvisor-logo.svg" alt="Tripadvisor Logo" src="https://www.discoveryworldtrekking.com/frontend/assets/images/tripadvisor-logo.svg" data-loaded="true"></a>
+                     </div>
+                     <blockquote class="trip-advisor__quote"> <p class="trip-advisor__quote-description">The DWT team took care of everything. Our experience with the mighty Himalayas was second to none.</p> <span class="circle-wrap"> <span class="circle__box"></span> <span class="circle__box"></span> <span class="circle__box"></span> <span class="circle__box"></span> <span class="circle__box"></span> <span class="trip-advisor__review"><strong>based on</strong> <span>44 Reviews</span></span> </span> <div class="quote-author"> <span class="quote-author__name">Huyy</span> <cite class="quote-author__address"> Australia </cite> </div>
+                     </blockquote>
+                       <div class="trip-advisor__arrow"></div>
+                       <a class="trip-advisor__verify-logo" href="https://www.tripadvisor.com/Attraction_Review-g293890-d6592958-Reviews-Discovery_World_Trekking-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html" target="_blank"> <img class="lozad" data-src="https://www.discoveryworldtrekking.com/frontend/assets/images/tripadvisor-2021-travellers-choice-discovery-world-trekking.png" alt="Tripadvisor 2021 Travellers Choice Discovery World Trekking" src="https://www.discoveryworldtrekking.com/frontend/assets/images/tripadvisor-2021-travellers-choice-discovery-world-trekking.png" data-loaded="true"> </a> 
+                       </div>
+                  </div>
+
+            <div class="item">
+              <img src="images/slider_2.jpg" alt="">
+              <div class="trip-advisor__content">
+                <div class="trip-advisor__header">
+                  <span>Reviews from</span>
+                   <a rel="noopener" href="https://www.tripadvisor.com/Attraction_Review-g293890-d6592958-Reviews-Discovery_World_Trekking-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html" target="_blank"> <img class="lozad" data-src="https://www.discoveryworldtrekking.com/frontend/assets/images/tripadvisor-logo.svg" alt="Tripadvisor Logo" src="https://www.discoveryworldtrekking.com/frontend/assets/images/tripadvisor-logo.svg" data-loaded="true"></a>
+                  </div>
+                   <blockquote class="trip-advisor__quote"> <p class="trip-advisor__quote-description">The DWT team took care of everything. Our experience with the mighty Himalayas was second to none.</p> <span class="circle-wrap"> <span class="circle__box"></span> <span class="circle__box"></span> <span class="circle__box"></span> <span class="circle__box"></span> <span class="circle__box"></span> <span class="trip-advisor__review"><strong>based on</strong> <span>44 Reviews</span></span> </span> <div class="quote-author"> <span class="quote-author__name">Huyy</span> <cite class="quote-author__address"> Australia </cite> </div>
+                    </blockquote>
+                     <div class="trip-advisor__arrow"></div>
+                      <a class="trip-advisor__verify-logo" href="https://www.tripadvisor.com/Attraction_Review-g293890-d6592958-Reviews-Discovery_World_Trekking-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html" target="_blank"> <img class="lozad" data-src="https://www.discoveryworldtrekking.com/frontend/assets/images/tripadvisor-2021-travellers-choice-discovery-world-trekking.png" alt="Tripadvisor 2021 Travellers Choice Discovery World Trekking" src="https://www.discoveryworldtrekking.com/frontend/assets/images/tripadvisor-2021-travellers-choice-discovery-world-trekking.png" data-loaded="true"> </a> 
+                     </div>
+                    </div>
+
+            <div class="item"><img src="images/slider_3.jpg" alt="">
+              <div class="trip-advisor__content">
+                <div class="trip-advisor__header">
+                  <span>Reviews from</span>
+                   <a rel="noopener" href="https://www.tripadvisor.com/Attraction_Review-g293890-d6592958-Reviews-Discovery_World_Trekking-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html" target="_blank"> <img class="lozad" data-src="https://www.discoveryworldtrekking.com/frontend/assets/images/tripadvisor-logo.svg" alt="Tripadvisor Logo" src="https://www.discoveryworldtrekking.com/frontend/assets/images/tripadvisor-logo.svg" data-loaded="true"></a>
+                  </div>
+                   <blockquote class="trip-advisor__quote"> <p class="trip-advisor__quote-description">The DWT team took care of everything. Our experience with the mighty Himalayas was second to none.</p> <span class="circle-wrap"> <span class="circle__box"></span> <span class="circle__box"></span> <span class="circle__box"></span> <span class="circle__box"></span> <span class="circle__box"></span> <span class="trip-advisor__review"><strong>based on</strong> <span>44 Reviews</span></span> </span> <div class="quote-author"> <span class="quote-author__name">Huyy</span> <cite class="quote-author__address"> Australia </cite> </div>
+                    </blockquote>
+                     <div class="trip-advisor__arrow"></div>
+                      <a class="trip-advisor__verify-logo" href="https://www.tripadvisor.com/Attraction_Review-g293890-d6592958-Reviews-Discovery_World_Trekking-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html" target="_blank"> <img class="lozad" data-src="https://www.discoveryworldtrekking.com/frontend/assets/images/tripadvisor-2021-travellers-choice-discovery-world-trekking.png" alt="Tripadvisor 2021 Travellers Choice Discovery World Trekking" src="https://www.discoveryworldtrekking.com/frontend/assets/images/tripadvisor-2021-travellers-choice-discovery-world-trekking.png" data-loaded="true"> </a> 
+                      </div>
+
+                    </div>
+
+            <div class="item"><img src="images/slider_4.jpg" alt="">
+              <div class="trip-advisor__content">
+                <div class="trip-advisor__header">
+                  <span>Reviews from</span>
+                   <a rel="noopener" href="https://www.tripadvisor.com/Attraction_Review-g293890-d6592958-Reviews-Discovery_World_Trekking-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html" target="_blank"> <img class="lozad" data-src="https://www.discoveryworldtrekking.com/frontend/assets/images/tripadvisor-logo.svg" alt="Tripadvisor Logo" src="https://www.discoveryworldtrekking.com/frontend/assets/images/tripadvisor-logo.svg" data-loaded="true"></a>
+                  </div>
+                   <blockquote class="trip-advisor__quote"> <p class="trip-advisor__quote-description">The DWT team took care of everything. Our experience with the mighty Himalayas was second to none.</p> <span class="circle-wrap"> <span class="circle__box"></span> <span class="circle__box"></span> <span class="circle__box"></span> <span class="circle__box"></span> <span class="circle__box"></span> <span class="trip-advisor__review"><strong>based on</strong> <span>44 Reviews</span></span> </span> <div class="quote-author"> <span class="quote-author__name">Huyy</span> <cite class="quote-author__address"> Australia </cite> </div>
+                    </blockquote>
+                     <div class="trip-advisor__arrow"></div>
+                      <a class="trip-advisor__verify-logo" href="https://www.tripadvisor.com/Attraction_Review-g293890-d6592958-Reviews-Discovery_World_Trekking-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html" target="_blank"> <img class="lozad" data-src="https://www.discoveryworldtrekking.com/frontend/assets/images/tripadvisor-2021-travellers-choice-discovery-world-trekking.png" alt="Tripadvisor 2021 Travellers Choice Discovery World Trekking" src="https://www.discoveryworldtrekking.com/frontend/assets/images/tripadvisor-2021-travellers-choice-discovery-world-trekking.png" data-loaded="true"> </a> 
+                     </div>
+                    </div>
+
+            <div class="item"><img src="images/slider_5.jpg" alt="">
+              <div class="trip-advisor__content">
+                <div class="trip-advisor__header">
+                  <span>Reviews from</span>
+                   <a rel="noopener" href="https://www.tripadvisor.com/Attraction_Review-g293890-d6592958-Reviews-Discovery_World_Trekking-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html" target="_blank"> <img class="lozad" data-src="https://www.discoveryworldtrekking.com/frontend/assets/images/tripadvisor-logo.svg" alt="Tripadvisor Logo" src="https://www.discoveryworldtrekking.com/frontend/assets/images/tripadvisor-logo.svg" data-loaded="true"></a>
+                  </div>
+                   <blockquote class="trip-advisor__quote"> <p class="trip-advisor__quote-description">The DWT team took care of everything. Our experience with the mighty Himalayas was second to none.</p> <span class="circle-wrap"> <span class="circle__box"></span> <span class="circle__box"></span> <span class="circle__box"></span> <span class="circle__box"></span> <span class="circle__box"></span> <span class="trip-advisor__review"><strong>based on</strong> <span>44 Reviews</span></span> </span> <div class="quote-author"> <span class="quote-author__name">Huyy</span> <cite class="quote-author__address"> Australia </cite> </div>
+                    </blockquote>
+                     <div class="trip-advisor__arrow"></div>
+                      <a class="trip-advisor__verify-logo" href="https://www.tripadvisor.com/Attraction_Review-g293890-d6592958-Reviews-Discovery_World_Trekking-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html" target="_blank"> <img class="lozad" data-src="https://www.discoveryworldtrekking.com/frontend/assets/images/tripadvisor-2021-travellers-choice-discovery-world-trekking.png" alt="Tripadvisor 2021 Travellers Choice Discovery World Trekking" src="https://www.discoveryworldtrekking.com/frontend/assets/images/tripadvisor-2021-travellers-choice-discovery-world-trekking.png" data-loaded="true"> </a> 
+                      </div>
+                      </div>
+
+           
+        </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="carousel-title">
+            <h2 style="background:#fff; color:#00AA6C; font-size:3.5rem; font-weight:8">Everest basecamp trek 14 days</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!--carousel ends-->
+<!--about-block starts-->
+<section class="about-block">
+  <div class="container">
+    <div class="row">
+     </style>
+      <div class="col col-relative">
+        <div class="about-block">
+            <div class="about-block-head">
+              <h2 class="about-block-title-box">
+                a leading himalayan
+              <br>
+              trekking and adventure specialist
+              </h2>
+              <h3 class="about-block-subtitle-box">
+                nepal's most trusted trip operator
+              </h3>
+            </div>
+
+          <div class="about-block-main">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 p-0">
+                  </div>
+                  <div class="col-md-8 p-5">
+                    <div class="paragraph-box">
+                      <p>
+                        Discovery World Trekking is a Nepal Government registered trekking/expedition/tour company with over a decade of experience in eco-tourism. Our goal is to provide heart-warming hospitality while letting you explore the stunning Nepali geography - that ranges from the world's deepest gorge (The Kali Gandaki Gorge) to the highest mountain (Mt. Everest). On the way, you will get to experience pristine woodlands, deep gorges, high snow peaks, traditional yet diverse Nepali cultures, & welcoming people - after all, Gautam Buddha was born in Nepal. If you are looking for a life-changing experience, visit Nepal, and we will take you on a journey you will remember throughout your life. <br>
+
+                        <div class="more-about-us">
+                          <a href="">+ more about us</a>
+                        </div>
+                      </p>
+                    </div>
+                  </div>
+                  
+                
+            <div class="col-md-6">
+              <div class="images-box">
+                <img src="./images/about_2.jpg" width="200px" height="300px" alt="">
+                <img src="./images/about_3.jpg" width="300px" height="200px" alt="">
+              </div>
+            </div>
+
+            <div class="col-md-6 ps-5 pe-0">
+              <div class="about-block-main-trekker">
+                <figure>
+                  <img src="./images/about_1.svg" width="85%;" height="85%" alt="">
+                </figure>
+              </div>
+            </div>
+
+            </div>
+            </div>
+            </div>
+          </div>
+          <div class="wave-box">
+            <img src="./images/about_4.svg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+  <!--about-block ends-->
+
+
+  <!--trip-section starts  -->
+  <section class="trip-section">
+    <!-- head starts -->
+    <section class="trip_section-head">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col">
+            <h1>top rated by travellers</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti ipsam, illum cum explicabo praesentium earum odio veritatis nostrum vero numquam.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- head ends -->
+
+    <!-- main starts -->
+    <section class="trip-section-main">
+      <div class="container">
+        <div class="row g-5">
+          <!-- i  am working in just one column down below right now -->
+          
+          <div class="col-md-6">
+            <!-- trip-card-box starts -->
+              <div class="trip-card-box">
+              <!-- thumbnail starts -->
+              <div class="thumbnail">
+                <figure>
+                  <!-- you can make this overlay element bg-black and then set position to absolute(absolute makes element overlap over the next element) and give opacity to get it overlayed over the image. -->
+                  <div class="overlay-element"></div> 
+                  <img src="./images/trip_card_1.jpg" alt="">
+                </figure>
+                <!-- button-box starts -->
+                <div class="button-box">
+                  <a href="#" class="btn bg-white">book your trip now</a>
+                  <a href="#" class="learn-more-button">or learn more</a>
+                </div>
+                <!-- button-box ends -->
+
+
+                <!-- price-box starts -->
+                <div class="price-box">
+                  <div class="price regular-price">
+                    <span><i>from</i> <del>US$ 1800</del></span>
+                  </div>
+                  <div class="price sale-price">
+                  <span>US$</span> <strong>1100</strong><sup>pp</sup>
+                  </div>
+                </div>
+                <!-- price-box ends -->
+
+                <!-- review-section starts -->
+              <div class="review-section">
+                <span class="stars-section">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-section"><a>of 45 reviews<a></span>
+              </div>
+              <!-- review-section ends-->
+
+              <!-- badge-box starts -->
+              <div class="badge-box ">
+                <i class="fa-solid fa-user-group"></i>
+                <span style="color:black;">group</span>
+              </div>
+              <!-- badge-box starts -->
+              </div>
+              <!-- thumbnail ends -->
+              <!-- meta starts -->
+              <div class="meta">
+                <div class="container p-0">
+                  <div class="row m-0">
+                    <div class="col-md-12 p-0">
+                      <h4>everest base camp trek - 14 days</h4>
+                    </div>
+                    <div class="col-md-12 p-0">
+                        <div class="row m-0 gx-3">
+                          <div class="col-md-4 ps-0">
+                            <div class="meta-flex d-flex">
+                              <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                            <div class="meta-body-text">
+                            <small>grade</small>
+                          <p>challenging</p>
+                            </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 px-1">
+                            <div class="meta-flex d-flex">
+                              <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                            <div class="meta-body-text">
+                            <small>grade</small>
+                          <p>challenging</p>
+                            </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 pe-0">
+                            <div class="meta-flex d-flex">
+                              <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                            <div class="meta-body-text">
+                            <small>grade</small>
+                          <p>challenging</p>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+                  <!-- meta ends -->
+                </div>
+                <!-- trip-card-box ends -->
+              </div>
+
+              <div class="col-md-6">
+                <!-- trip-card-box starts -->
+                  <div class="trip-card-box">
+                  <!-- thumbnail starts -->
+                  <div class="thumbnail">
+                    <figure>
+                      <!-- you can make this overlay element bg-black and then set position to absolute(absolute makes element overlap over the next element) and give opacity to get it overlayed over the image. -->
+                      <div class="overlay-element"></div> 
+                      <img src="./images/trip_card_1.jpg" alt="">
+                    </figure>
+                    <!-- button-box starts -->
+                    <div class="button-box">
+                      <a href="#" class="btn bg-white">book your trip now</a>
+                      <a href="#" class="learn-more-button">or learn more</a>
+                    </div>
+                    <!-- button-box ends -->
+  
+  
+                    <!-- price-box starts -->
+                    <div class="price-box">
+                      <div class="price regular-price">
+                        <span><i>from</i> <del>US$ 1800</del></span>
+                      </div>
+                      <div class="price sale-price">
+                      <span>US$</span> <strong>1100</strong><sup>pp</sup>
+                      </div>
+                    </div>
+                    <!-- price-box ends -->
+  
+                    <!-- review-section starts -->
+                  <div class="review-section">
+                    <span class="stars-section">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span class="text-section"><a>of 45 reviews<a></span>
+                  </div>
+                  <!-- review-section ends-->
+  
+                  <!-- badge-box starts -->
+                  <div class="badge-box ">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span style="color:black;">group</span>
+                  </div>
+                  <!-- badge-box starts -->
+  
+                  
+                  </div>
+                  <!-- thumbnail ends -->
+                  
+                  <!-- meta starts -->
+                  <div class="meta">
+                    <div class="container p-0">
+                      <div class="row m-0">
+                        <div class="col-md-12 p-0">
+                          <h4>everest base camp trek - 14 days</h4>
+                        </div>
+                        <div class="col-md-12 p-0">
+                            <div class="row m-0 gx-3">
+                              <div class="col-md-4 ps-0">
+                                <div class="meta-flex d-flex">
+                                  <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                <div class="meta-body-text">
+                                <small>grade</small>
+                              <p>challenging</p>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4 px-1">
+                                <div class="meta-flex d-flex">
+                                  <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                <div class="meta-body-text">
+                                <small>grade</small>
+                              <p>challenging</p>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4 pe-0">
+                                <div class="meta-flex d-flex">
+                                  <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                <div class="meta-body-text">
+                                <small>grade</small>
+                              <p>challenging</p>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                      </div>
+                      <!-- meta ends -->
+                    </div>
+                    <!-- trip-card-box ends -->
+                  </div>
+
+                  <div class="col-md-6">
+                    <!-- trip-card-box starts -->
+                      <div class="trip-card-box">
+                      <!-- thumbnail starts -->
+                      <div class="thumbnail">
+                        <figure>
+                          <!-- you can make this overlay element bg-black and then set position to absolute(absolute makes element overlap over the next element) and give opacity to get it overlayed over the image. -->
+                          <div class="overlay-element"></div> 
+                          <img src="./images/trip_card_1.jpg" alt="">
+                        </figure>
+                        <!-- button-box starts -->
+                        <div class="button-box">
+                          <a href="#" class="btn bg-white">book your trip now</a>
+                          <a href="#" class="learn-more-button">or learn more</a>
+                        </div>
+                        <!-- button-box ends -->
+      
+      
+                        <!-- price-box starts -->
+                        <div class="price-box">
+                          <div class="price regular-price">
+                            <span><i>from</i> <del>US$ 1800</del></span>
+                          </div>
+                          <div class="price sale-price">
+                          <span>US$</span> <strong>1100</strong><sup>pp</sup>
+                          </div>
+                        </div>
+                        <!-- price-box ends -->
+      
+                        <!-- review-section starts -->
+                      <div class="review-section">
+                        <span class="stars-section">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span class="text-section"><a>of 45 reviews<a></span>
+                      </div>
+                      <!-- review-section ends-->
+      
+                      <!-- badge-box starts -->
+                      <div class="badge-box ">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span style="color:black;">group</span>
+                      </div>
+                      <!-- badge-box starts -->
+      
+                      
+                      </div>
+                      <!-- thumbnail ends -->
+                      
+                      <!-- meta starts -->
+                      <div class="meta">
+                        <div class="container p-0">
+                          <div class="row m-0">
+                            <div class="col-md-12 p-0">
+                              <h4>everest base camp trek - 14 days</h4>
+                            </div>
+                            <div class="col-md-12 p-0">
+                                <div class="row m-0 gx-3">
+                                  <div class="col-md-4 ps-0">
+                                    <div class="meta-flex d-flex">
+                                      <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                    <div class="meta-body-text">
+                                    <small>grade</small>
+                                  <p>challenging</p>
+                                    </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 px-1">
+                                    <div class="meta-flex d-flex">
+                                      <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                    <div class="meta-body-text">
+                                    <small>grade</small>
+                                  <p>challenging</p>
+                                    </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 pe-0">
+                                    <div class="meta-flex d-flex">
+                                      <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                    <div class="meta-body-text">
+                                    <small>grade</small>
+                                  <p>challenging</p>
+                                    </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+                          </div>
+                          <!-- meta ends -->
+                        </div>
+                        <!-- trip-card-box ends -->
+                      </div>
+
+                      <div class="col-md-6">
+                        <!-- trip-card-box starts -->
+                          <div class="trip-card-box">
+                          <!-- thumbnail starts -->
+                          <div class="thumbnail">
+                            <figure>
+                              <!-- you can make this overlay element bg-black and then set position to absolute(absolute makes element overlap over the next element) and give opacity to get it overlayed over the image. -->
+                              <div class="overlay-element"></div> 
+                              <img src="./images/trip_card_1.jpg" alt="">
+                            </figure>
+                            <!-- button-box starts -->
+                            <div class="button-box">
+                              <a href="#" class="btn bg-white">book your trip now</a>
+                              <a href="#" class="learn-more-button">or learn more</a>
+                            </div>
+                            <!-- button-box ends -->
+          
+          
+                            <!-- price-box starts -->
+                            <div class="price-box">
+                              <div class="price regular-price">
+                                <span><i>from</i> <del>US$ 1800</del></span>
+                              </div>
+                              <div class="price sale-price">
+                              <span>US$</span> <strong>1100</strong><sup>pp</sup>
+                              </div>
+                            </div>
+                            <!-- price-box ends -->
+          
+                            <!-- review-section starts -->
+                          <div class="review-section">
+                            <span class="stars-section">
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </span>
+                            <span class="text-section"><a>of 45 reviews<a></span>
+                          </div>
+                          <!-- review-section ends-->
+          
+                          <!-- badge-box starts -->
+                          <div class="badge-box ">
+                            <i class="fa-solid fa-user-group"></i>
+                            <span style="color:black;">group</span>
+                          </div>
+                          <!-- badge-box starts -->
+          
+                          
+                          </div>
+                          <!-- thumbnail ends -->
+                          
+                          <!-- meta starts -->
+                          <div class="meta">
+                            <div class="container p-0">
+                              <div class="row m-0">
+                                <div class="col-md-12 p-0">
+                                  <h4>everest base camp trek - 14 days</h4>
+                                </div>
+                                <div class="col-md-12 p-0">
+                                    <div class="row m-0 gx-3">
+                                      <div class="col-md-4 ps-0">
+                                        <div class="meta-flex d-flex">
+                                          <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                        <div class="meta-body-text">
+                                        <small>grade</small>
+                                      <p>challenging</p>
+                                        </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4 px-1">
+                                        <div class="meta-flex d-flex">
+                                          <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                        <div class="meta-body-text">
+                                        <small>grade</small>
+                                      <p>challenging</p>
+                                        </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-4 pe-0">
+                                        <div class="meta-flex d-flex">
+                                          <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                        <div class="meta-body-text">
+                                        <small>grade</small>
+                                      <p>challenging</p>
+                                        </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                              </div>
+                              <!-- meta ends -->
+                            </div>
+                            <!-- trip-card-box ends -->
+                          </div>
+            </div>
+            </div>
+          </section>
+    <!-- main ends -->
+    </section>
+    <!-- trip-section ends -->
+
+    <style>
+      .trip-month__badge {
+  width: 250px;
+  height: 232px;
+  margin: 0 auto 20px;
+  display: block;
+}
+.icon {
+  display: inline-block;
+  fill: currentColor;
+  height: 1em;
+  position: relative;
+  vertical-align: middle;
+  width: 1em;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+    </style>
+    <!-- best-seller section starts -->
+    <section class="best-seller-section">
+      <div class="container">
+        <div class="row pt-5">
+          <!-- first col starts -->
+          <div class="col-md-12 d-flex justify-content-center pt-5">
+            <!-- this is not working starts. -->
+<img src="./images/best-seller.png" alt="" height="400px" width="400px">            <!-- this is not working ends. -->
+          </div>
+          <!-- first col starts -->
+
+          <!-- second col starts -->
+          <div class="col-md-12 text-center">
+            <h2>mount everest base camp trek - 12 days</h2>
+          </div>
+          <!-- second col ends-->
+
+          <!-- third col starts -->
+          <div class="col-md-12 second-col d-flex">
+            <!-- badge-box starts -->
+            <div class="badge-box ">
+              <i class="fa-solid fa-user-group"></i>
+              <span style="color:white;">Best seller</span>
+            </div>
+            <!-- badge-box ends -->
+              <div class="flex-boxxed d-flex">
+                <div class="img-box">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div class="content-box">
+                  <small>grade</small>
+                  <b>challenging</b>
+              </div>
+              </div>
+              
+              <div class="flex-boxxed d-flex">
+                <div class="img-box">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div class="content-box">
+                  <small>grade</small>
+                  <b>challenging</b>
+                </div>
+              </div>
+
+              <div class="flex-boxxed d-flex">
+                <div class="img-box">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div class="content-box">
+                  <small>grade</small>
+                  <b>challenging</b>
+                </div>
+              </div>
+
+              <div class="flex-boxxed d-flex">
+                <div class="img-box">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div class="content-box">
+                  <small>grade</small>
+                  <b>challenging</b>
+              </div>
+              </div>
+
+            </div>
+            <!-- third col starts -->
+
+            <!-- forth col starts -->
+            <!-- you can also set margin-auto to center the alignment horizontally. -->
+            <div class="col-md-12 forth-col d-flex justify-content-center py-4">
+            <div class="review-section">
+              <span class="stars-section">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+              <span class="text-section"><a>of 45 reviews</a></span>
+            </div>
+            </div>
+            <!-- forth col ends -->
+
+          </div>
+        </div>
+      </section>
+    
+    <!-- best-seller section ends-->
+
+    <!-- experience-nepal-section starts -->
+    <section class="experience-nepal-section section-padding">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-md-12 first-col d-flex">
+        <div class="content-section">
+          <h1>experience nepal</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio recusandae possimus optio quos cupiditate</p>
+        </div>
+        <div class="recommend-section">
+          <h6>as recommended in</h6>
+          <div class="d-flex">
+            <span><img src="./images/experience_1.svg" alt=""></span>
+            <span><img src="./images/experience_2.svg" alt=""></span>
+            <span><img src="./images/experience_3.svg" alt=""></span>
+            <span><img src="./images/experience_4.svg" alt=""></span>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-6">
+          <!-- trip-card-box starts -->
+            <div class="trip-card-box">
+            <!-- thumbnail starts -->
+            <div class="thumbnail">
+              <figure>
+                <!-- you can make this overlay element bg-black and then set position to absolute(absolute makes element overlap over the next element) and give opacity to get it overlayed over the image. -->
+                <div class="overlay-element"></div> 
+                <img src="./images/trip_card_1.jpg" alt="">
+              </figure>
+              <!-- button-box starts -->
+              <div class="button-box">
+                <a href="#" class="btn bg-white">book your trip now</a>
+                <a href="#" class="learn-more-button">or learn more</a>
+              </div>
+              <!-- button-box ends -->
+
+
+              <!-- price-box starts -->
+              <div class="price-box">
+                <div class="price regular-price">
+                  <span><i>from</i> <del>US$ 1800</del></span>
+                </div>
+                <div class="price sale-price">
+                <span>US$</span> <strong>1100</strong><sup>pp</sup>
+                </div>
+              </div>
+              <!-- price-box ends -->
+
+              <!-- review-section starts -->
+            <div class="review-section">
+              <span class="stars-section">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+              <span class="text-section"><a>of 45 reviews</a><a></a></span><a>
+            </a></div><a>
+            <!-- review-section ends-->
+
+            <!-- badge-box starts -->
+            <div class="badge-box ">
+              <i class="fa-solid fa-user-group"></i>
+              <span style="color:black;">group</span>
+            </div>
+            <!-- badge-box ends -->
+            </a></div><a>
+            <!-- thumbnail ends -->
+            <!-- meta starts -->
+            <div class="meta">
+              <div class="container p-0">
+                <div class="row m-0">
+                  <div class="col-md-12 p-0">
+                    <h4>everest base camp trek - 14 days</h4>
+                  </div>
+                  <div class="col-md-12 p-0">
+                      <div class="row m-0 gx-3">
+                        <div class="col-md-4 ps-0">
+                          <div class="meta-flex d-flex">
+                            <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                          <div class="meta-body-text">
+                          <small>grade</small>
+                        <p>challenging</p>
+                          </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 px-1">
+                          <div class="meta-flex d-flex">
+                            <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                          <div class="meta-body-text">
+                          <small>grade</small>
+                        <p>challenging</p>
+                          </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 pe-0">
+                          <div class="meta-flex d-flex">
+                            <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                          <div class="meta-body-text">
+                          <small>grade</small>
+                        <p>challenging</p>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  </div>
+                  </div>
+                </div>
+                <!-- meta ends -->
+              </a></div><a>
+              <!-- trip-card-box ends -->
+            </a></div>
+            <div class="col-md-6">
+              <!-- trip-card-box starts -->
+                <div class="trip-card-box">
+                <!-- thumbnail starts -->
+                <div class="thumbnail">
+                  <figure>
+                    <!-- you can make this overlay element bg-black and then set position to absolute(absolute makes element overlap over the next element) and give opacity to get it overlayed over the image. -->
+                    <div class="overlay-element"></div> 
+                    <img src="./images/trip_card_1.jpg" alt="">
+                  </figure>
+                  <!-- button-box starts -->
+                  <div class="button-box">
+                    <a href="#" class="btn bg-white">book your trip now</a>
+                    <a href="#" class="learn-more-button">or learn more</a>
+                  </div>
+                  <!-- button-box ends -->
+
+
+                  <!-- price-box starts -->
+                  <div class="price-box">
+                    <div class="price regular-price">
+                      <span><i>from</i> <del>US$ 1800</del></span>
+                    </div>
+                    <div class="price sale-price">
+                    <span>US$</span> <strong>1100</strong><sup>pp</sup>
+                    </div>
+                  </div>
+                  <!-- price-box ends -->
+
+                  <!-- review-section starts -->
+                <div class="review-section">
+                  <span class="stars-section">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                  <span class="text-section"><a>of 45 reviews</a><a></a></span><a>
+                </a></div><a>
+                <!-- review-section ends-->
+
+                <!-- badge-box starts -->
+                <div class="badge-box ">
+                  <i class="fa-solid fa-user-group"></i>
+                  <span style="color:black;">group</span>
+                </div>
+                <!-- badge-box starts -->
+                </a></div><a>
+                <!-- thumbnail ends -->
+                <!-- meta starts -->
+                <div class="meta">
+                  <div class="container p-0">
+                    <div class="row m-0">
+                      <div class="col-md-12 p-0">
+                        <h4>everest base camp trek - 14 days</h4>
+                      </div>
+                      <div class="col-md-12 p-0">
+                          <div class="row m-0 gx-3">
+                            <div class="col-md-4 ps-0">
+                              <div class="meta-flex d-flex">
+                                <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                              <div class="meta-body-text">
+                              <small>grade</small>
+                            <p>challenging</p>
+                              </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 px-1">
+                              <div class="meta-flex d-flex">
+                                <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                              <div class="meta-body-text">
+                              <small>grade</small>
+                            <p>challenging</p>
+                              </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 pe-0">
+                              <div class="meta-flex d-flex">
+                                <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                              <div class="meta-body-text">
+                              <small>grade</small>
+                            <p>challenging</p>
+                              </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      </div>
+                      </div>
+                    </div>
+                    <!-- meta ends -->
+                  </a></div><a>
+                  <!-- trip-card-box ends -->
+                </a></div>
+                <div class="col-md-6">
+                  <!-- trip-card-box starts -->
+                    <div class="trip-card-box">
+                    <!-- thumbnail starts -->
+                    <div class="thumbnail">
+                      <figure>
+                        <!-- you can make this overlay element bg-black and then set position to absolute(absolute makes element overlap over the next element) and give opacity to get it overlayed over the image. -->
+                        <div class="overlay-element"></div> 
+                        <img src="./images/trip_card_1.jpg" alt="">
+                      </figure>
+                      <!-- button-box starts -->
+                      <div class="button-box">
+                        <a href="#" class="btn bg-white">book your trip now</a>
+                        <a href="#" class="learn-more-button">or learn more</a>
+                      </div>
+                      <!-- button-box ends -->
+    
+    
+                      <!-- price-box starts -->
+                      <div class="price-box">
+                        <div class="price regular-price">
+                          <span><i>from</i> <del>US$ 1800</del></span>
+                        </div>
+                        <div class="price sale-price">
+                        <span>US$</span> <strong>1100</strong><sup>pp</sup>
+                        </div>
+                      </div>
+                      <!-- price-box ends -->
+    
+                      <!-- review-section starts -->
+                    <div class="review-section">
+                      <span class="stars-section">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </span>
+                      <span class="text-section"><a>of 45 reviews</a><a></a></span><a>
+                    </a></div><a>
+                    <!-- review-section ends-->
+    
+                    <!-- badge-box starts -->
+                    <div class="badge-box ">
+                      <i class="fa-solid fa-user-group"></i>
+                      <span style="color:black;">group</span>
+                    </div>
+                    <!-- badge-box starts -->
+                    </a></div><a>
+                    <!-- thumbnail ends -->
+                    <!-- meta starts -->
+                    <div class="meta">
+                      <div class="container p-0">
+                        <div class="row m-0">
+                          <div class="col-md-12 p-0">
+                            <h4>everest base camp trek - 14 days</h4>
+                          </div>
+                          <div class="col-md-12 p-0">
+                              <div class="row m-0 gx-3">
+                                <div class="col-md-4 ps-0">
+                                  <div class="meta-flex d-flex">
+                                    <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                  <div class="meta-body-text">
+                                  <small>grade</small>
+                                <p>challenging</p>
+                                  </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-4 px-1">
+                                  <div class="meta-flex d-flex">
+                                    <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                  <div class="meta-body-text">
+                                  <small>grade</small>
+                                <p>challenging</p>
+                                  </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-4 pe-0">
+                                  <div class="meta-flex d-flex">
+                                    <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                  <div class="meta-body-text">
+                                  <small>grade</small>
+                                <p>challenging</p>
+                                  </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                          </div>
+                          </div>
+                        </div>
+                        <!-- meta ends -->
+                      </a></div><a>
+                      <!-- trip-card-box ends -->
+                    </a></div>
+                    <div class="col-md-6">
+                      <!-- trip-card-box starts -->
+                        <div class="trip-card-box">
+                        <!-- thumbnail starts -->
+                        <div class="thumbnail">
+                          <figure>
+                            <!-- you can make this overlay element bg-black and then set position to absolute(absolute makes element overlap over the next element) and give opacity to get it overlayed over the image. -->
+                            <div class="overlay-element"></div> 
+                            <img src="./images/trip_card_1.jpg" alt="">
+                          </figure>
+                          <!-- button-box starts -->
+                          <div class="button-box">
+                            <a href="#" class="btn bg-white">book your trip now</a>
+                            <a href="#" class="learn-more-button">or learn more</a>
+                          </div>
+                          <!-- button-box ends -->
+        
+        
+                          <!-- price-box starts -->
+                          <div class="price-box">
+                            <div class="price regular-price">
+                              <span><i>from</i> <del>US$ 1800</del></span>
+                            </div>
+                            <div class="price sale-price">
+                            <span>US$</span> <strong>1100</strong><sup>pp</sup>
+                            </div>
+                          </div>
+                          <!-- price-box ends -->
+        
+                          <!-- review-section starts -->
+                        <div class="review-section">
+                          <span class="stars-section">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </span>
+                          <span class="text-section"><a>of 45 reviews</a><a></a></span><a>
+                        </a></div><a>
+                        <!-- review-section ends-->
+        
+                        <!-- badge-box starts -->
+                        <div class="badge-box ">
+                          <i class="fa-solid fa-user-group"></i>
+                          <span style="color:black;">group</span>
+                        </div>
+                        <!-- badge-box starts -->
+                        </a></div><a>
+                        <!-- thumbnail ends -->
+                        <!-- meta starts -->
+                        <div class="meta">
+                          <div class="container p-0">
+                            <div class="row m-0">
+                              <div class="col-md-12 p-0">
+                                <h4>everest base camp trek - 14 days</h4>
+                              </div>
+                              <div class="col-md-12 p-0">
+                                  <div class="row m-0 gx-3">
+                                    <div class="col-md-4 ps-0">
+                                      <div class="meta-flex d-flex">
+                                        <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                      <div class="meta-body-text">
+                                      <small>grade</small>
+                                    <p>challenging</p>
+                                      </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4 px-1">
+                                      <div class="meta-flex d-flex">
+                                        <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                      <div class="meta-body-text">
+                                      <small>grade</small>
+                                    <p>challenging</p>
+                                      </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4 pe-0">
+                                      <div class="meta-flex d-flex">
+                                        <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                      <div class="meta-body-text">
+                                      <small>grade</small>
+                                    <p>challenging</p>
+                                      </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                              </div>
+                              </div>
+                            </div>
+                            <!-- meta ends -->
+                          </a></div><a>
+                          <!-- trip-card-box ends -->
+                        </a></div>
+                        <div class="col-md-6">
+                          <!-- trip-card-box starts -->
+                            <div class="trip-card-box">
+                            <!-- thumbnail starts -->
+                            <div class="thumbnail">
+                              <figure>
+                                <!-- you can make this overlay element bg-black and then set position to absolute(absolute makes element overlap over the next element) and give opacity to get it overlayed over the image. -->
+                                <div class="overlay-element"></div> 
+                                <img src="./images/trip_card_1.jpg" alt="">
+                              </figure>
+                              <!-- button-box starts -->
+                              <div class="button-box">
+                                <a href="#" class="btn bg-white">book your trip now</a>
+                                <a href="#" class="learn-more-button">or learn more</a>
+                              </div>
+                              <!-- button-box ends -->
+            
+            
+                              <!-- price-box starts -->
+                              <div class="price-box">
+                                <div class="price regular-price">
+                                  <span><i>from</i> <del>US$ 1800</del></span>
+                                </div>
+                                <div class="price sale-price">
+                                <span>US$</span> <strong>1100</strong><sup>pp</sup>
+                                </div>
+                              </div>
+                              <!-- price-box ends -->
+            
+                              <!-- review-section starts -->
+                            <div class="review-section">
+                              <span class="stars-section">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </span>
+                              <span class="text-section"><a>of 45 reviews</a><a></a></span><a>
+                            </a></div><a>
+                            <!-- review-section ends-->
+            
+                            <!-- badge-box starts -->
+                            <div class="badge-box ">
+                              <i class="fa-solid fa-user-group"></i>
+                              <span style="color:black;">group</span>
+                            </div>
+                            <!-- badge-box starts -->
+                            </a></div><a>
+                            <!-- thumbnail ends -->
+                            <!-- meta starts -->
+                            <div class="meta">
+                              <div class="container p-0">
+                                <div class="row m-0">
+                                  <div class="col-md-12 p-0">
+                                    <h4>everest base camp trek - 14 days</h4>
+                                  </div>
+                                  <div class="col-md-12 p-0">
+                                      <div class="row m-0 gx-3">
+                                        <div class="col-md-4 ps-0">
+                                          <div class="meta-flex d-flex">
+                                            <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                          <div class="meta-body-text">
+                                          <small>grade</small>
+                                        <p>challenging</p>
+                                          </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-4 px-1">
+                                          <div class="meta-flex d-flex">
+                                            <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                          <div class="meta-body-text">
+                                          <small>grade</small>
+                                        <p>challenging</p>
+                                          </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-4 pe-0">
+                                          <div class="meta-flex d-flex">
+                                            <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                          <div class="meta-body-text">
+                                          <small>grade</small>
+                                        <p>challenging</p>
+                                          </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                                </div>
+                                <!-- meta ends -->
+                              </a></div><a>
+                              <!-- trip-card-box ends -->
+                            </a></div>
+                            <div class="col-md-6">
+                              <!-- trip-card-box starts -->
+                                <div class="trip-card-box">
+                                <!-- thumbnail starts -->
+                                <div class="thumbnail">
+                                  <figure>
+                                    <!-- you can make this overlay element bg-black and then set position to absolute(absolute makes element overlap over the next element) and give opacity to get it overlayed over the image. -->
+                                    <div class="overlay-element"></div> 
+                                    <img src="./images/trip_card_1.jpg" alt="">
+                                  </figure>
+                                  <!-- button-box starts -->
+                                  <div class="button-box">
+                                    <a href="#" class="btn bg-white">book your trip now</a>
+                                    <a href="#" class="learn-more-button">or learn more</a>
+                                  </div>
+                                  <!-- button-box ends -->
+                
+                
+                                  <!-- price-box starts -->
+                                  <div class="price-box">
+                                    <div class="price regular-price">
+                                      <span><i>from</i> <del>US$ 1800</del></span>
+                                    </div>
+                                    <div class="price sale-price">
+                                    <span>US$</span> <strong>1100</strong><sup>pp</sup>
+                                    </div>
+                                  </div>
+                                  <!-- price-box ends -->
+                
+                                  <!-- review-section starts -->
+                                <div class="review-section">
+                                  <span class="stars-section">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                  </span>
+                                  <span class="text-section"><a>of 45 reviews</a><a></a></span><a>
+                                </a></div><a>
+                                <!-- review-section ends-->
+                
+                                <!-- badge-box starts -->
+                                <div class="badge-box ">
+                                  <i class="fa-solid fa-user-group"></i>
+                                  <span style="color:black;">group</span>
+                                </div>
+                                <!-- badge-box starts -->
+                                </a></div><a>
+                                <!-- thumbnail ends -->
+                                <!-- meta starts -->
+                                <div class="meta">
+                                  <div class="container p-0">
+                                    <div class="row m-0">
+                                      <div class="col-md-12 p-0">
+                                        <h4>everest base camp trek - 14 days</h4>
+                                      </div>
+                                      <div class="col-md-12 p-0">
+                                          <div class="row m-0 gx-3">
+                                            <div class="col-md-4 ps-0">
+                                              <div class="meta-flex d-flex">
+                                                <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                              <div class="meta-body-text">
+                                              <small>grade</small>
+                                            <p>challenging</p>
+                                              </div>
+                                              </div>
+                                            </div>
+                                            <div class="col-md-4 px-1">
+                                              <div class="meta-flex d-flex">
+                                                <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                              <div class="meta-body-text">
+                                              <small>grade</small>
+                                            <p>challenging</p>
+                                              </div>
+                                              </div>
+                                            </div>
+                                            <div class="col-md-4 pe-0">
+                                              <div class="meta-flex d-flex">
+                                                <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                              <div class="meta-body-text">
+                                              <small>grade</small>
+                                            <p>challenging</p>
+                                              </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                      </div>
+                                      </div>
+                                      </div>
+                                    </div>
+                                    <!-- meta ends -->
+                                  </a></div><a>
+                                  <!-- trip-card-box ends -->
+                                </a></div>
+                                <div class="col-md-6">
+                                  <!-- trip-card-box starts -->
+                                    <div class="trip-card-box">
+                                    <!-- thumbnail starts -->
+                                    <div class="thumbnail">
+                                      <figure>
+                                        <!-- you can make this overlay element bg-black and then set position to absolute(absolute makes element overlap over the next element) and give opacity to get it overlayed over the image. -->
+                                        <div class="overlay-element"></div> 
+                                        <img src="./images/trip_card_1.jpg" alt="">
+                                      </figure>
+                                      <!-- button-box starts -->
+                                      <div class="button-box">
+                                        <a href="#" class="btn bg-white">book your trip now</a>
+                                        <a href="#" class="learn-more-button">or learn more</a>
+                                      </div>
+                                      <!-- button-box ends -->
+                    
+                    
+                                      <!-- price-box starts -->
+                                      <div class="price-box">
+                                        <div class="price regular-price">
+                                          <span><i>from</i> <del>US$ 1800</del></span>
+                                        </div>
+                                        <div class="price sale-price">
+                                        <span>US$</span> <strong>1100</strong><sup>pp</sup>
+                                        </div>
+                                      </div>
+                                      <!-- price-box ends -->
+                    
+                                      <!-- review-section starts -->
+                                    <div class="review-section">
+                                      <span class="stars-section">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                      </span>
+                                      <span class="text-section"><a>of 45 reviews</a><a></a></span><a>
+                                    </a></div><a>
+                                    <!-- review-section ends-->
+                    
+                                    <!-- badge-box starts -->
+                                    <div class="badge-box ">
+                                      <i class="fa-solid fa-user-group"></i>
+                                      <span style="color:black;">group</span>
+                                    </div>
+                                    <!-- badge-box starts -->
+                                    </a></div><a>
+                                    <!-- thumbnail ends -->
+                                    <!-- meta starts -->
+                                    <div class="meta">
+                                      <div class="container p-0">
+                                        <div class="row m-0">
+                                          <div class="col-md-12 p-0">
+                                            <h4>everest base camp trek - 14 days</h4>
+                                          </div>
+                                          <div class="col-md-12 p-0">
+                                              <div class="row m-0 gx-3">
+                                                <div class="col-md-4 ps-0">
+                                                  <div class="meta-flex d-flex">
+                                                    <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                                  <div class="meta-body-text">
+                                                  <small>grade</small>
+                                                <p>challenging</p>
+                                                  </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-4 px-1">
+                                                  <div class="meta-flex d-flex">
+                                                    <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                                  <div class="meta-body-text">
+                                                  <small>grade</small>
+                                                <p>challenging</p>
+                                                  </div>
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-4 pe-0">
+                                                  <div class="meta-flex d-flex">
+                                                    <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                                  <div class="meta-body-text">
+                                                  <small>grade</small>
+                                                <p>challenging</p>
+                                                  </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                          </div>
+                                          </div>
+                                          </div>
+                                        </div>
+                                        <!-- meta ends -->
+                                      </a></div><a>
+                                      <!-- trip-card-box ends -->
+                                    </a></div>
+                                    <div class="col-md-6">
+                                      <!-- trip-card-box starts -->
+                                        <div class="trip-card-box">
+                                        <!-- thumbnail starts -->
+                                        <div class="thumbnail">
+                                          <figure>
+                                            <!-- you can make this overlay element bg-black and then set position to absolute(absolute makes element overlap over the next element) and give opacity to get it overlayed over the image. -->
+                                            <div class="overlay-element"></div> 
+                                            <img src="./images/trip_card_1.jpg" alt="">
+                                          </figure>
+                                          <!-- button-box starts -->
+                                          <div class="button-box">
+                                            <a href="#" class="btn bg-white">book your trip now</a>
+                                            <a href="#" class="learn-more-button">or learn more</a>
+                                          </div>
+                                          <!-- button-box ends -->
+                        
+                        
+                                          <!-- price-box starts -->
+                                          <div class="price-box">
+                                            <div class="price regular-price">
+                                              <span><i>from</i> <del>US$ 1800</del></span>
+                                            </div>
+                                            <div class="price sale-price">
+                                            <span>US$</span> <strong>1100</strong><sup>pp</sup>
+                                            </div>
+                                          </div>
+                                          <!-- price-box ends -->
+                        
+                                          <!-- review-section starts -->
+                                        <div class="review-section">
+                                          <span class="stars-section">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                          </span>
+                                          <span class="text-section"><a>of 45 reviews</a><a></a></span><a>
+                                        </a></div><a>
+                                        <!-- review-section ends-->
+                        
+                                        <!-- badge-box starts -->
+                                        <div class="badge-box ">
+                                          <i class="fa-solid fa-user-group"></i>
+                                          <span style="color:black;">group</span>
+                                        </div>
+                                        <!-- badge-box starts -->
+                                        </a></div><a>
+                                        <!-- thumbnail ends -->
+                                        <!-- meta starts -->
+                                        <div class="meta">
+                                          <div class="container p-0">
+                                            <div class="row m-0">
+                                              <div class="col-md-12 p-0">
+                                                <h4>everest base camp trek - 14 days</h4>
+                                              </div>
+                                              <div class="col-md-12 p-0">
+                                                  <div class="row m-0 gx-3">
+                                                    <div class="col-md-4 ps-0">
+                                                      <div class="meta-flex d-flex">
+                                                        <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                                      <div class="meta-body-text">
+                                                      <small>grade</small>
+                                                    <p>challenging</p>
+                                                      </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-md-4 px-1">
+                                                      <div class="meta-flex d-flex">
+                                                        <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                                      <div class="meta-body-text">
+                                                      <small>grade</small>
+                                                    <p>challenging</p>
+                                                      </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-md-4 pe-0">
+                                                      <div class="meta-flex d-flex">
+                                                        <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                                      <div class="meta-body-text">
+                                                      <small>grade</small>
+                                                    <p>challenging</p>
+                                                      </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                              </div>
+                                              </div>
+                                            </div>
+                                            <!-- meta ends -->
+                                          </a></div><a>
+                                          <!-- trip-card-box ends -->
+                                        </a></div>
+      </div>
+    </div>
+    
+    </section>
+
+    <div class="svg-section">
+    </div>
+    <!-- experience-nepal-section ends -->
+
+   <!-- join-upcoming-trips starts -->
+    <section class="join-upcoming-trips section-paddding section-margin">
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col">
+                <div class="head-content-box">
+                  <h1>join upcoming trips</h1>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum nobis quis possimus officia sapiente unde.</p>
+                </div>
+              </div>
+              <div class="col d-flex justify-content-end">
+                <div class="button-boxxed d-flex">
+                  <div class="btn-primary-md">abc</div>  
+                  <select class="btn-primary-md select-box" style="padding:0px 30px;">
+                      <option value="abc">abc</option>
+                      <option value="ac" selected>ac</option>
+                      <option value="c">c</option>
+                      <option value="bc">bc</option>
+                    </select>  
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+
+            <div class="table-box" style="width:92.5vw; overflow-x:auto;">
+              <!-- table starts from here -->
+              <table class="table table-striped table-hover table-bordered border-light" style="width:100vw;">
+                <caption class="text-center">table: table for travellers</caption>
+                <style>
+                  table tr:first-child th{
+                    vertical-align:middle;
+                    text-transform: capitalize;
+                    /* border-right:1px solid #00000033; */
+                    text-align:center;
+                    }
+
+                    /* @media(max-width:920px){
+                      table{
+                        width:100%;
+                        overflow:scroll;
+                      }
+                    } */
+
+                    table tr:first-child th:last-child{
+                      /* border-right:0; */
+                    }
+
+                    table tr{
+                      border-bottom:1px solid black;
+                    }
+
+                  @font-face {
+                    font-family: "anyname";
+                    src: url(fonts/Rustico\ Regular\ 400.otf) format("opentype");
+                    font-weight:normal;
+                    font-size:4rem;
+                  }
+                  h6{
+                    font-family: "anyname";
+                    font-weight:bold;
+                    font-size:1.5rem;
+                  }
+
+                  thead{
+                    border-bottom: 3px solid black;
+                  }
+                </style>
+                <thead>
+                <tr style="height: 50px; border-bottom:1px solid grey;">
+                  <th>trip name</th>
+                  <th>price</th>
+                  <th>departure date</th>
+                  <th>trip status</th>
+                </tr>
+                </thead>
+                
+                
+               <tbody class="table-group-divider">
+                <tr class="table-active">
+                  <td><h6>Around Manaslu Circuit Trek - 12 Days</h6></td>
+                  <td>
+                    <div><del>$1150</del></div>
+                    <div><span>$750</span> <span class="bg-red">save $400</span></div>
+                  </td>
+                  <td>
+                    <strong style="display:block">12 days</strong>
+                    <small>12 june-24 june, sunday, 4:00-6:00</small>
+                  </td>
+                  <td>
+                    <div class="table-flex-box d-flex">
+                      <p class="align-self-p">guaranteed</p>
+                      <div class="btn-primary-sm">enquire now</div>
+                    </div>
+                  </td>
+                </tr>
+                
+                
+                <tr>
+                  <td><h6>Around Manaslu Circuit Trek - 12 Days</h6></td>
+                  <td>
+                    <div><del>$1150</del></div>
+                    <div><span>$750</span> <span class="bg-red">save $400</span></div>
+                  </td>
+                  <td>
+                    <strong style="display:block">12 days</strong>
+                    <small>12 june-24 june, sunday, 4:00-6:00</small>
+                  </td>
+                  <td>
+                    <div class="table-flex-box d-flex">
+                      <p class="align-self-p">guaranteed</p>
+                      <div class="btn-primary-sm">enquire now</div>
+                    </div>
+                  </td>
+                </tr>
+                
+                
+                <tr>
+                  <td><h6>Around Manaslu Circuit Trek - 12 Days</h6></td>
+                  <td>
+                    <div><del>$1150</del></div>
+                    <div><span>$750</span> <span class="bg-red">save $400</span></div>
+                  </td>
+                  <td>
+                    <strong style="display:block">12 days</strong>
+                    <small>12 june-24 june, sunday, 4:00-6:00</small>
+                  </td>
+                  <td>
+                    <div class="table-flex-box d-flex">
+                      <p class="align-self-p">guaranteed</p>
+                      <div class="btn-primary-sm">enquire now</div>
+                    </div>
+                  </td>
+                </tr>
+
+                
+                <tr>
+                  <td><h6>Around Manaslu Circuit Trek - 12 Days</h6></td>
+                  <td>
+                    <div><del>$1150</del></div>
+                    <div><span>$750</span> <span class="bg-red">save $400</span></div>
+                  </td>
+                  <td>
+                    <strong style="display:block">12 days</strong>
+                    <small>12 june-24 june, sunday, 4:00-6:00</small>
+                  </td>
+                  <td>
+                    <div class="table-flex-box d-flex">
+                      <p class="align-self-p">guaranteed</p>
+                      <div class="btn-primary-sm">enquire now</div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><h6>Around Manaslu Circuit Trek - 12 Days</h6></td>
+                  <td>
+                    <div><del>$1150</del></div>
+                    <div><span>$750</span> <span class="bg-red">save $400</span></div>
+                  </td>
+                  <td>
+                    <strong style="display:block">12 days</strong>
+                    <small>12 june-24 june, sunday, 4:00-6:00</small>
+                  </td>
+                  <td>
+                    <div class="table-flex-box d-flex">
+                      <p class="align-self-p">guaranteed</p>
+                      <div class="btn-primary-sm">enquire now</div>
+                    </div>
+                  </td>
+                </tr>
+               </tbody>
+
+               <tfoot>
+               </tfoot>
+                
+              </table>
+              <!-- table starts from here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- join-upcoming-trips ends-->
+
+
+<!-- what-sets-us-apart starts -->
+<section class="what-sets section-padding section-margin">
+  <div class="container">
+    <div class="row gy-5 justify-content-center" >
+      <div class="col-md-12 text-center">
+      <h6>what sets us apart</h6>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod voluptate illum excepturi itaque numquam illo.</p>
+</div>
+<div class="col-md-12 p-0">
+  <div class="row m-0">
+    <div class="col-md-3">
+      <div class="box">
+        <i class="fa fa-facebook"></i>
+        <h6>winner of tripadviser excellence award</h6>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus culpa nemo possimus non magnam obcaecati praesentium modi eaque dolores? Laudantium.</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="box">
+        <i class="fa fa-facebook"></i>
+        <h6>winner of tripadviser excellence award</h6>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus culpa nemo possimus non magnam obcaecati praesentium modi eaque dolores? Laudantium.</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="box">
+        <i class="fa fa-facebook"></i>
+        <h6>winner of tripadviser excellence award</h6>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus culpa nemo possimus non magnam obcaecati praesentium modi eaque dolores? Laudantium.</p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="box">
+        <i class="fa fa-facebook"></i>
+        <h6>winner of tripadviser excellence award</h6>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus culpa nemo possimus non magnam obcaecati praesentium modi eaque dolores? Laudantium.</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="col-md-3">
+  <a href="#" class=" btn btn-primary-sm d-flex justify-content-center">and a lot more</a>
+</div>
+    </div>
+  </div>
+
+<style>
+.owl-2.owl-carousel .owl-nav.disabled{
+ display: block;
+}
+
+.owl-2 .owl-prev{
+    left: -550px;
+    top: -170px;
+    position: relative;
+}
+
+.owl-2 span{
+    font-size:3rem;
+}
+
+.owl-2 .owl-next{
+    right: -550px;
+    top: -170px;
+    position: relative;
+}
+
+
+</style> 
+
+
+<!-- owl-carousel-2 starts -->
+<div class="px-5">
+  <div class="carousel-box px-5">
+    <div class="owl-2 owl-carousel owl-theme">
+      <div class="item card d-flex justify-content-center">
+        <div class="img-box" style="margin:1rem 0; ">
+          <img src="./images/travelors_choice_1.gif"  alt="">
+        </div>
+        </div>
+        <div class="item card d-flex justify-content-center">
+          <div class="img-box" style="margin:1rem 0; ">
+            <img src="./images/travelors_choice_2.gif" alt="">
+          </div>
+        </div>
+        <div class="item card d-flex justify-content-center">
+          <div class="img-box" style="margin:1rem 0;">
+            <img src="./images/travelors_choice_3.gif" alt="">
+            </div>
+          </div>
+          <div class="item card d-flex justify-content-center">
+              <div class="img-box" style="margin:1rem 0;">
+                <img src="./images/travelors_choice_3.gif"  alt="">
+              </div>
+            </div>
+            <div class="item card d-flex justify-content-center">
+              <div class="img-box" style="margin:1rem 0; ">
+                  <img src="./images/travelors_choice_3.gif" alt="">
+                </div>
+                </div>
+              </div>  
+</div>
+</div>
+<!-- owl-carousel-2 ends -->
+</section>
+<!-- what-sets-us-apart ends -->
+
+
+<!-- short-rewarding starts  -->
+<section class="short-rewarding section-padding section-margin">
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+    <h1>short rewarding trips</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, nihil?</p>
+    </div>
+    
+
+    <div class="row">
+          <div class="col-md-6">
+            <!-- trip-card-box starts -->
+              <div class="trip-card-box">
+              <!-- thumbnail starts -->
+              <div class="thumbnail">
+                <figure>
+                  <!-- you can make this overlay element bg-black and then set position to absolute(absolute makes element overlap over the next element) and give opacity to get it overlayed over the image. -->
+                  <div class="overlay-element"></div> 
+                  <img src="./images/trip_card_1.jpg" alt="">
+                </figure>
+                <!-- button-box starts -->
+                <div class="button-box">
+                  <a href="#" class="btn bg-white">book your trip now</a>
+                  <a href="#" class="learn-more-button">or learn more</a>
+                </div>
+                <!-- button-box ends -->
+  
+  
+                <!-- price-box starts -->
+                <div class="price-box">
+                  <div class="price regular-price">
+                    <span><i>from</i> <del>US$ 1800</del></span>
+                  </div>
+                  <div class="price sale-price">
+                  <span>US$</span> <strong>1100</strong><sup>pp</sup>
+                  </div>
+                </div>
+                <!-- price-box ends -->
+  
+                <!-- review-section starts -->
+              <div class="review-section">
+                <span class="stars-section">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </span>
+                <span class="text-section"><a>of 45 reviews</a><a></a></span><a>
+              </a></div><a>
+              <!-- review-section ends-->
+  
+              <!-- badge-box starts -->
+              <div class="badge-box ">
+                <i class="fa-solid fa-user-group"></i>
+                <span style="color:black;">group</span>
+              </div>
+              <!-- badge-box starts -->
+              </a></div><a>
+              <!-- thumbnail ends -->
+              <!-- meta starts -->
+              <div class="meta">
+                <div class="container p-0">
+                  <div class="row m-0">
+                    <div class="col-md-12 p-0">
+                      <h4>everest base camp trek - 14 days</h4>
+                    </div>
+                    <div class="col-md-12 p-0">
+                        <div class="row m-0 gx-3">
+                          <div class="col-md-4 ps-0">
+                            <div class="meta-flex d-flex">
+                              <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                            <div class="meta-body-text">
+                            <small>grade</small>
+                          <p>challenging</p>
+                            </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 px-1">
+                            <div class="meta-flex d-flex">
+                              <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                            <div class="meta-body-text">
+                            <small>grade</small>
+                          <p>challenging</p>
+                            </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 pe-0">
+                            <div class="meta-flex d-flex">
+                              <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                            <div class="meta-body-text">
+                            <small>grade</small>
+                          <p>challenging</p>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+                  <!-- meta ends -->
+                </a></div><a>
+                <!-- trip-card-box ends -->
+              </a></div>
+
+              <div class="col-md-6">
+                <!-- trip-card-box starts -->
+                  <div class="trip-card-box">
+                  <!-- thumbnail starts -->
+                  <div class="thumbnail">
+                    <figure>
+                      <!-- you can make this overlay element bg-black and then set position to absolute(absolute makes element overlap over the next element) and give opacity to get it overlayed over the image. -->
+                      <div class="overlay-element"></div> 
+                      <img src="./images/trip_card_1.jpg" alt="">
+                    </figure>
+                    <!-- button-box starts -->
+                    <div class="button-box">
+                      <a href="#" class="btn bg-white">book your trip now</a>
+                      <a href="#" class="learn-more-button">or learn more</a>
+                    </div>
+                    <!-- button-box ends -->
+  
+  
+                    <!-- price-box starts -->
+                    <div class="price-box">
+                      <div class="price regular-price">
+                        <span><i>from</i> <del>US$ 1800</del></span>
+                      </div>
+                      <div class="price sale-price">
+                      <span>US$</span> <strong>1100</strong><sup>pp</sup>
+                      </div>
+                    </div>
+                    <!-- price-box ends -->
+  
+                    <!-- review-section starts -->
+                  <div class="review-section">
+                    <span class="stars-section">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span class="text-section"><a>of 45 reviews</a><a></a></span><a>
+                  </a></div><a>
+                  <!-- review-section ends-->
+  
+                  <!-- badge-box starts -->
+                  <div class="badge-box ">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span style="color:black;">group</span>
+                  </div>
+                  <!-- badge-box starts -->
+                  </a></div><a>
+                  <!-- thumbnail ends -->
+                  <!-- meta starts -->
+                  <div class="meta">
+                    <div class="container p-0">
+                      <div class="row m-0">
+                        <div class="col-md-12 p-0">
+                          <h4>everest base camp trek - 14 days</h4>
+                        </div>
+                        <div class="col-md-12 p-0">
+                            <div class="row m-0 gx-3">
+                              <div class="col-md-4 ps-0">
+                                <div class="meta-flex d-flex">
+                                  <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                <div class="meta-body-text">
+                                <small>grade</small>
+                              <p>challenging</p>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4 px-1">
+                                <div class="meta-flex d-flex">
+                                  <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                <div class="meta-body-text">
+                                <small>grade</small>
+                              <p>challenging</p>
+                                </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4 pe-0">
+                                <div class="meta-flex d-flex">
+                                  <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                <div class="meta-body-text">
+                                <small>grade</small>
+                              <p>challenging</p>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                      </div>
+                      <!-- meta ends -->
+                    </a></div><a>
+                    <!-- trip-card-box ends -->
+                  </a></div>
+                  <div class="col-md-6">
+                    <!-- trip-card-box starts -->
+                      <div class="trip-card-box">
+                      <!-- thumbnail starts -->
+                      <div class="thumbnail">
+                        <figure>
+                          <!-- you can make this overlay element bg-black and then set position to absolute(absolute makes element overlap over the next element) and give opacity to get it overlayed over the image. -->
+                          <div class="overlay-element"></div> 
+                          <img src="./images/trip_card_1.jpg" alt="">
+                        </figure>
+                        <!-- button-box starts -->
+                        <div class="button-box">
+                          <a href="#" class="btn bg-white">book your trip now</a>
+                          <a href="#" class="learn-more-button">or learn more</a>
+                        </div>
+                        <!-- button-box ends -->
+      
+      
+                        <!-- price-box starts -->
+                        <div class="price-box">
+                          <div class="price regular-price">
+                            <span><i>from</i> <del>US$ 1800</del></span>
+                          </div>
+                          <div class="price sale-price">
+                          <span>US$</span> <strong>1100</strong><sup>pp</sup>
+                          </div>
+                        </div>
+                        <!-- price-box ends -->
+      
+                        <!-- review-section starts -->
+                      <div class="review-section">
+                        <span class="stars-section">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span class="text-section"><a>of 45 reviews</a><a></a></span><a>
+                      </a></div><a>
+                      <!-- review-section ends-->
+      
+                      <!-- badge-box starts -->
+                      <div class="badge-box ">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span style="color:black;">group</span>
+                      </div>
+                      <!-- badge-box starts -->
+                      </a></div><a>
+                      <!-- thumbnail ends -->
+                      <!-- meta starts -->
+                      <div class="meta">
+                        <div class="container p-0">
+                          <div class="row m-0">
+                            <div class="col-md-12 p-0">
+                              <h4>everest base camp trek - 14 days</h4>
+                            </div>
+                            <div class="col-md-12 p-0">
+                                <div class="row m-0 gx-3">
+                                  <div class="col-md-4 ps-0">
+                                    <div class="meta-flex d-flex">
+                                      <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                    <div class="meta-body-text">
+                                    <small>grade</small>
+                                  <p>challenging</p>
+                                    </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 px-1">
+                                    <div class="meta-flex d-flex">
+                                      <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                    <div class="meta-body-text">
+                                    <small>grade</small>
+                                  <p>challenging</p>
+                                    </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 pe-0">
+                                    <div class="meta-flex d-flex">
+                                      <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                    <div class="meta-body-text">
+                                    <small>grade</small>
+                                  <p>challenging</p>
+                                    </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+                          </div>
+                          <!-- meta ends -->
+                        </a></div><a>
+                        <!-- trip-card-box ends -->
+                      </a></div>
+                  <div class="col-md-6">
+                    <!-- trip-card-box starts -->
+                      <div class="trip-card-box">
+                      <!-- thumbnail starts -->
+                      <div class="thumbnail">
+                        <figure>
+                          <!-- you can make this overlay element bg-black and then set position to absolute(absolute makes element overlap over the next element) and give opacity to get it overlayed over the image. -->
+                          <div class="overlay-element"></div> 
+                          <img src="./images/trip_card_1.jpg" alt="">
+                        </figure>
+                        <!-- button-box starts -->
+                        <div class="button-box">
+                          <a href="#" class="btn bg-white">book your trip now</a>
+                          <a href="#" class="learn-more-button">or learn more</a>
+                        </div>
+                        <!-- button-box ends -->
+      
+      
+                        <!-- price-box starts -->
+                        <div class="price-box">
+                          <div class="price regular-price">
+                            <span><i>from</i> <del>US$ 1800</del></span>
+                          </div>
+                          <div class="price sale-price">
+                          <span>US$</span> <strong>1100</strong><sup>pp</sup>
+                          </div>
+                        </div>
+                        <!-- price-box ends -->
+      
+                        <!-- review-section starts -->
+                      <div class="review-section">
+                        <span class="stars-section">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </span>
+                        <span class="text-section"><a>of 45 reviews</a><a></a></span><a>
+                      </a></div><a>
+                      <!-- review-section ends-->
+      
+                      <!-- badge-box starts -->
+                      <div class="badge-box ">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span style="color:black;">group</span>
+                      </div>
+                      <!-- badge-box starts -->
+                      </a></div><a>
+                      <!-- thumbnail ends -->
+                      <!-- meta starts -->
+                      <div class="meta">
+                        <div class="container p-0">
+                          <div class="row m-0">
+                            <div class="col-md-12 p-0">
+                              <h4>everest base camp trek - 14 days</h4>
+                            </div>
+                            <div class="col-md-12 p-0">
+                                <div class="row m-0 gx-3">
+                                  <div class="col-md-4 ps-0">
+                                    <div class="meta-flex d-flex">
+                                      <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                    <div class="meta-body-text">
+                                    <small>grade</small>
+                                  <p>challenging</p>
+                                    </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 px-1">
+                                    <div class="meta-flex d-flex">
+                                      <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                    <div class="meta-body-text">
+                                    <small>grade</small>
+                                  <p>challenging</p>
+                                    </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4 pe-0">
+                                    <div class="meta-flex d-flex">
+                                      <i class="fa-solid fa-clock" style="width:25px;align-self:stretch"></i>
+                                    <div class="meta-body-text">
+                                    <small>grade</small>
+                                  <p>challenging</p>
+                                    </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+                          </div>
+                          <!-- meta ends -->
+                        </a></div><a>
+                        <!-- trip-card-box ends -->
+                      </a></div>
+                      
+                        
+        </div>
+      </div>
+      
+      </section>
+  
+      
+<!-- short-rewarding ends -->
+
+
+<!-- outreach fund starts -->
+<section class="outreach-fund section-padding" style="padding-bottom:0;">
+  <div class="bg-yellow">
+    <div class="content-box">
+      <p>our serious effort in <b class="bolder">improving</b> the community</p>
+    </div>
+    <div class="bg-green d-flex justify-content-center">
+      <div class="con-box d-flex justify-content-center">
+       <div class="box">
+        <h2>outreach fund</h2>
+      <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim mollitia voluptatibus non nobis temp omnis, laboriosam quia repudiandae? Veniam in, voluptatibus maiores sunt corporis que?</p>
+      <a href="#" class="btn btn-primary-sm">learn about csr</a>
+       </div> 
+      </div>
+    </div>
+  </div>
+  <div class="bg-orange">
+    <div class="thumbnail"></div>
+    <div class="content-box d-flex justify-content-center">
+   <h2>a global happy family</h2>
+   <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatum, aut enim architecto reprehenderit suscipit odit praesentium recusandae quod animi qui ab eius at provident placeat maiores eligendi vel perferendis.</p>
+   <a href="#" class="btn btn-primary-sm">learn about our csr <i class="fa-solid fa-heart"></i> </a>
+    </div>
+  </div>
+</section>
+<!-- outreach fund ends-->
+
+
+<!-- plan-your starts -->
+<section class="plan-your bg-primary d-flex">
+  <div class="container">
+    <div class="row flex-box justify-content-center">
+      <div class="col d-flex justify-content-center">
+        <div class="content-box text-center">
+        <h1>plan your trip to nepal</h1>
+        <a href="#" class="btn btn-primary-sm">start planning now</a>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</section>
+<!-- plan-your ends -->
+
+<!-- recent-from starts -->
+<section class="recent-from section-padding section-margin">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-12 text-center">
+        <h2>recent from our blog</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, rem?<a href="#">visit our blog</a></p>
+      </div>
+      <div class="col-md-4">
+        <div class="box-shadow-box">
+          <div class="image-box">
+            <img src="./images/recent_from_1.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="content-box">
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim?</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate esse labore numquam sequi. Deserunt aspernatur consequuntur ratione dolore quam ipsam ut odio, nostrum repellendus aliquam aliquid, officia amet voluptatem beatae?</p>
+            <a href="#" class="btn btn-primary-sm no-bg">continue reading</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box-shadow-box">
+          <div class="image-box">
+            <img src="./images/recent_from_1.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="content-box">
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim?</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate esse labore numquam sequi. Deserunt aspernatur consequuntur ratione dolore quam ipsam ut odio, nostrum repellendus aliquam aliquid, officia amet voluptatem beatae?</p>
+            <a href="#" class="btn btn-primary-sm no-bg">continue reading</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box-shadow-box">
+          <div class="image-box">
+            <img src="./images/recent_from_1.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="content-box">
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim?</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate esse labore numquam sequi. Deserunt aspernatur consequuntur ratione dolore quam ipsam ut odio, nostrum repellendus aliquam aliquid, officia amet voluptatem beatae?</p>
+            <a href="#" class="btn btn-primary-sm no-bg">continue reading</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- recent-from ends -->
+
+
+<!-- we-are starts -->
+<section class="we-are section-padding-sm section-margin" style="height:900px;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 text-center">
+        <b style="display:inline-block; margin-bottom:15px;">we are associated with</b>
+        <div class="flex-box d-flex" style>
+          <style>
+           .we-are .flex-box img{
+            height:75px;
+            width:75px;
+            object-fit:cover;
+           }
+
+          </style>
+          <div class="item item1"> <img src="./images/we_are_1.png"  alt=""></div>
+          <div class="item item1"> <img src="./images/we_are_1.png"  alt=""></div>
+          <div class="item item1"> <img src="./images/we_are_1.png"  alt=""></div>
+          <div class="item item1"> <img src="./images/we_are_1.png"  alt=""></div>
+          <div class="item item1"> <img src="./images/we_are_1.png"  alt=""></div>
+        </div>
+      </div>
+      <div class="col-md-12 py-5 pb-1">
+        <img src="./images/last_image.png" alt="">
+      </div>
+
+      <div class="col-md-4 py-5 px-5 d-flex justify-content-end">
+        <img src="./images/logo.svg" alt="" height="100px" class="img-fluid">
+      </div>
+
+      <div class="col-md-8 py-5 px-5 d-flex justify-content-start">
+        <div class="content-box">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, dolore.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- we-are ends -->
+
+
+
+
+
+
+
+    <!-- footer starts -->
+    <footer>
+      <div class="footer-top">
+        <div class="container p-0">
+          <div class="row m-0">
+            <div class="col p-4">
+              <!-- you could put all 3 boxes of footer in col directly as well. -->
+              <div class="footer-box d-flex">
+                <div class="footer-contact">
+                  <h3 class="block-title">Discovery world trekking</h3>
+                  <address>
+                    post box: 21576, kaldhara marg, <br>
+                    thamel, Kathmandu, nepal <br>
+                    Phone: <a href="#">+977 1 4252366 </a> Cell <br>
+                    <a href="#">+9779840055491</a> <br>
+                    <a href="#">Email: info@discoveryworldtrekking.com </a><br>
+                    Address: Saat Ghumti Chowk, <br>
+                    Thamel, Kathmandu, Nepal. <br>
+                    <br>
+                    <div class="social-links">
+                      <a href="#"><i  class="fa-brands fa-facebook-f"></i></a>
+                      <a href="#"><i  class="fa-brands fa-twitter"></i></a>
+                      <a href="#"><i  class="fa-brands fa-instagram"></i></a>
+                      <a href="#"><i  class="fa-brands fa-linkedin-in"></i></a>
+                      <a href="#"><i  class="fa-brands fa-youtube"></i></a>
+                    </div>
+                  </address>
+                </div>
+                <div class="footer-newsletter">
+                  <h3 class="block-title">subscribe our newsletter</h3>
+                  <p>Get the latest news, offers and
+                    inspiring travel stories 
+                    straight to your inbox.</p>
+
+                    
+                    </style>
+                    <form action="#">
+                    <input type="text" name="name" placeholder="your name" class="form-control">
+                    <input type="email" name="email" placeholder="your email address" class="form-control">
+                    <input type="submit" value="Subscribe" class="form-control">
+                    </form>
+  
+                </div>
+                <div class="footer-links">
+                  <h3 class="block-title">pages</h3>
+                  <div class="links-box d-flex">
+                    <ul>
+                      <li>home</li>
+                      <li>about us</li>
+                      <li>our team</li>
+                      <li class="uc">csr</li>
+                      <li>terms & conditions</li>
+                      <li>make a payment</li>
+                    </ul>
+                    <ul>
+                      <li>why us?</li>
+                      <li>gallery</li>
+                      <li>packages</li>
+                      <li>day tours</li>
+                      <li>country tours</li>
+                      <li>travel info</li>
+                    </ul><ul>
+                      <li>blog</li>
+                      <li>best deals</li>
+                      <li>contact us</li>
+                      <li class="uc">b2b partner</li>
+                      <li><span class="uc">Faq</span>s</li>
+                      <li>privacy policy</li>
+                    </ul>
+  
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer-top ends -->
+
+
+      <!-- footer-bottom starts -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="payment-box">
+                <h2>we accept</h2>
+                <figure>
+                  <img class="img-fluid" height="auto" width="600px" src="./images/footer_bottom.png" alt="online-payment-options">
+                </figure>
+                
+              </div>
+              <p>All Contents & Photographs Within This Website Is Copyrighted © by Discovery World Trekking Pvt. Ltd. & May Not Be Reproduced Without Our Permission.
+              </p>
+             
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <!-- footer-bottom ends -->
+      
+    </footer>
+    <!-- footer ends-->
+  </section>
+    <!-- root ends -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+     <!-- jquery cdn for owl-carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    
+<!-- owl-carousel cdn  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- js fancybox cdn -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+<script>
+  $('.owl-1').owlCarousel({
+ loop:true,
+ margin:10,
+ nav:false,
+ auto: true,
+ dots:false,
+ responsive:{
+     0:{
+         items:1
+     },
+     600:{
+         items:1
+     },
+     1400:{
+         items:1
+     }
+ }
+})
+
+$('.owl-2').owlCarousel({
+ loop:true,
+ margin:10,
+ nav:true,
+ auto: true,
+ dots:true,
+ responsive:{
+     0:{
+         items:3
+     },
+     600:{
+         items:5
+     },
+     1400:{
+         items:5
+     }
+ }
+})
+
+
+ </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
