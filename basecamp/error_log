@@ -1,3 +1,0 @@
-[26-Apr-2020 20:05:17 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home1/topeakcleaningso/public_html/responses.php:1) in /home1/topeakcleaningso/public_html/responses.php on line 2
-[26-Apr-2020 20:05:17 America/Chicago] PHP Warning:  implode(): Invalid arguments passed in /home1/topeakcleaningso/public_html/responses.php on line 25
-[26-Apr-2020 20:05:17 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/topeakcleaningso/public_html/responses.php:1) in /home1/topeakcleaningso/public_html/responses.php on line 187
