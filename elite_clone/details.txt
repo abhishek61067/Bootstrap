@@ -1,0 +1,24 @@
+1. paragraph:
+a. color:#535353
+b. size:1 rem
+c. font-family:    
+d. line-height: 26px;
+e. overflow-wrap: word-break;
+f. box-sizing: border-box;
+
+
+
+2. input:
+a. color:
+b. placeholder:
+
+
+3. button 
+text-decoration: none;
+line-height: 46px;
+border-radius: 3px;
+font-weight: 500;
+font-size: 15px;
+font-family: 'Montserrat', sans-serif;
+text-transform: uppercase;
+

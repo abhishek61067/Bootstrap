@@ -1,0 +1,36 @@
+html{
+    background-color: white;
+}
+
+body{
+    position: relative;
+    
+}
+
+div.header1{
+    display:block;
+    
+}
+
+div.header1 img,div{
+    display: inline-block;
+    padding-right: 60px;
+
+}
+
+.nav1{
+    margin-left:0px;
+    background-color: green;
+    font-weight: bold;
+}
+ul{
+background-color: green;
+}
+
+ul li{
+    padding-right: 60px;
+    display: inline-block;
+    list-style-type: none;
+    font-weight: bold;
+    float: left;
+}

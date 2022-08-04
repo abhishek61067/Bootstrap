@@ -1,0 +1,32 @@
+1. for top-head, either use two columns, and put the text(text-end) to end for 2nd column or use three columns and make 2nd column empty but give some space for that empty column. make last column flex and justify-content:end.
+
+2. you cant have a whole architecture in your mind, you should start with one thing and then play around changing and then the flow begins.
+
+3. flex-items are normally aligned to left of container.
+
+4. flex-items do have width and height(fit-content)
+5. when you are applying effect to the library like carousel and navbar, always use !important to apply property.
+6. to apply color of <a> elements, you cant set color from the div it is in. Effect should be applied in a.
+7. inline-flex makes the container inline.
+8. you can put container even in the prebuilt classes of bootstrap.
+9. after and before are just apseudo class and position is determined by absolute and top left, bottom and right. BUt normally, with before top is used and with after bottom.
+10. lets say i have a div and inside text.  text-align would not work in display flex. because after flex, the text is not anymore a text,its an item.
+11. you can apply display:flex to the after element because after is an elemetn and inside it, we have content.(eg: content:"")
+12. you cant have more than one after for one elemetn. Other wise the latest after will replace the previous one.
+13. lot of times, the effect wont get applied because, somewhere else, the property is set with important keyword. So jsut use importatn when you apply new property in case the effect is not shown.
+14. z-index of child element is higher than parent.
+15. figure is block
+16. flex didnt have an effect on img.(not confirmed),but worked when overflow:hidden used.
+17. the element in css should be specified with the same name as in html.
+
+eg:
+i was creating an (after element) for .loan-card but i specified like this when creating an after element.
+.simple-loan-process .loan-card-col .loan-card::after
+Later, when i tried to apply ssome effect in .loan-card::after element, i just specified .loan-card::after but that didnt work. SO i had to specify whole (.simple-loan-process .loan-card-col .loan-card::after)
+text-center in column will center only text to the column.
+if the content of before or after is not quoted, the element wont be seen. Remember, after or before is an element and content atribute defines the content inside the after or before element.
+while using calc, make sure to give space between operator and operands.
+when using top or bottom,etc, the element top or bottom will start from that specific point and not the center of that element.
+By default, line height of a paragraph is 1.2 in chrome and 1.1 in firefox.
+
+

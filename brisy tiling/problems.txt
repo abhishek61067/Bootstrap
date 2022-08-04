@@ -1,0 +1,2 @@
+1. how to incrase the height of wl carousel
+2. image in why-choose-us section not working. i was trying to set height of figure 500px and image to object-fit:cover.

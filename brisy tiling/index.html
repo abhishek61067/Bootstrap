@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font awesome cdn using kit-->
+    <script src="https://kit.fontawesome.com/f0894016da.js" crossorigin = "anonymous"></script>
+    <!-- google font cdn-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Brisy Services</title>    
+    <!-- link for css  -->
+  <link rel="stylesheet" href="style.css">
+  <!-- link for js fancy -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+    <!-- css cdn for owl-carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- another css(default) cdn  for owl-carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+   
+
+  </head>
+  <body>
+    <!-- header starts -->
+    <section class="header">
+    <div class="top ">
+        <!-- whatever the padding is,the background remains the same. -->
+        <div class="container">
+          <div class="row">
+
+            <div class="col-2 py-3">
+              <p class="p-viewport">ABN: 75621564127</p>
+            </div>    
+            <div class="col-4 py-3">
+              <p class="p-viewport">Email: brisytiling.au@gmail.com</p>
+            </div>   
+            <div class="col py-3 text-end">
+              <a href="https://www.facebook.com/brisy.tiling.3"><i class="fa fa-facebook"></i></a>
+              <a href="mailto:brisytiling.au@gmail.com"> <i class="fa fa-envelope"></i></a>
+            </div>
+             
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col py-1">
+                    <nav class="navbar navbar-expand-lg navbar-light ">
+                        <!-- by defalt, navbar has container, so make p-0 to make it symmetric with other containers. -->
+                        <div class="container p-0">
+                          <a class="navbar-brand ms-auto  mb-2 mb-lg-0" href="index.php"><img src="./images/logo.png" width="150px" 
+                            height="120px" alt=""></a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                          aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <!-- nav links excluding logo starts from here -->
+                          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                            <!-- ms and me represents margin start and me for margin end. -->
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                <a id ="home" class="nav-link <?php echo ($activePage==='index'||$activePage=='')?'active':''; ?>" aria-current="page"  href="#" 
+                                >Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a id ="aboutUs" class="nav-link <?php echo ($activePage==='about_us')?'active':''; ?>" href="#" >
+                                  About Us
+                                </a>
+                            </li>
+                              <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle"  class="nav-link <?php echo ($activePage==='services')?'active':''; ?>" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                          </a>
+                         
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#countertop">countertop installation</a></li>
+                            <li><a class="dropdown-item" href="#tile">tile flooring</a></li>
+                            <li><a class="dropdown-item" href="#kitchen">kitchen tiling</a></li>
+                            <li><a class="dropdown-item" href="#kitchen-sp">kitchen splashback</a></li>
+                        </ul>
+                        </li>
+                              <li class="nav-item">
+                                <a id ="projects" class="nav-link <?php echo ($activePage==='gallery')?'active':''; ?>" href="#">Gallery</a>
+                              </li>
+                            
+                              <li class="nav-item">
+                                <a id="reviews" class="nav-link <?php echo ($activePage==='reviews')?'active':''; ?>" href="#">
+                                reviews</a>
+                              </li>
+                              <li class="nav-item">
+                                <a id="contact" class="nav-link <?php echo ($activePage==='contact')?'active':''; ?>" href="#">
+                                Contact</a>
+                              </li>
+                              </ul>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- header ends-->
+
+    <!-- carousel-box-1 starts -->
+    <section class="carousel-box-1">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col p-0">
+                    <!-- owl-carousel starts -->
+                    <div class="owl-1 owl-carousel owl-theme">
+                        <div class="item item1">
+                                <h2>Looking for tiling services?</h2>
+                                <h6>We have been Installing Floors since 1988
+                                  and have Installed Flooring in more than 750,000
+                                  Apartments & Homes! </h6>
+                                
+                                <a href="#" class="btn btn-primary-sm" style="margin-top:20px">contact us</a>
+                        </div>
+                        <div class="item item2">
+                          <h2>Brisy Tiling Services</h2>
+                          <h6>We are here to help you with every form of tiling services including countertop installation, tile flooring, kitchen tiling and kitchen splashback. Feel free to contact </h6>
+                                
+                                <a href="#" class="btn btn-primary-sm" style="margin-top:20px">contact us</a>
+                        </div>
+                    </div>
+                    <!-- owl-carousel ends -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- carousel-box-1 ends -->
+    
+    <style>
+      .content-box h4{
+        font-size: 1.2rem;
+      }
+    </style>
+    
+    <!--why-choose-us starts-->
+    <section class="why-choose section-padding section-margin" style="padding-bottom:6rem">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6">
+                <div class="img-box">
+                    <figure class="fig1">
+                        <img src="./images/why_choose_1.jpg" alt="">
+                          <figure class="fig2">
+                              <img src="./images/why_choose_2.jpg" alt="">
+                          </figure>
+                        </figure>
+                </div>
+                </div>
+                <div class="col-md-6">
+                    <p class="p-cap">why choose us</p>
+                    <h1 class="" style="font-size:2rem">About brisy tiling company</h1>
+                    <p class="p-border-bottom-top-20" style="font-size:1rem;line-height:30px;padding-top: 10px;;">Brisy Tiling Pty Ltd is fully licensed with complete insurances.
+                      In tiling works, we have over fifteen years of experience in commercial and residential tiling. Currently, our area of work is in Brisbane, Gold coast, Sunshine coast but could accept jobs in other parts of Queensland.
+                      
+                      We can professionally deliver jobs in Mosaics, Ceramic, Terracotta, Granite, Marble, Glass, and Natural stones.</p>
+
+                    <div class="reasons">
+                    <div class="item item1">
+                        <div class="flex-box">
+                                <i class="fa-solid fa-smile"></i>
+                                <p>custom projects with unique designs</p>
+                        </div>
+                    </div>
+
+                    <div class="item item2">
+                        <div class="flex-box">
+                          <i class="fa-solid fa-house"></i>
+                          <p>We bring our showroom to your home</p>
+                           </div>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--why-choose-us ends-->
+
+<Style>
+  .content-box .btn-danger{
+    background-color: #ac2027;
+    width: 100%;
+    border-radius: 33px;
+    padding-bottom: 10px;
+  }
+</Style>
+    <!-- tiling-services starts -->
+    <section class="tiling-services section-padding-lg section-margin">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 class="title">tiling services</h1>
+            <p class="sub-title">We are here to help with every form of tiling services since 15 years.</p>
+            </div>
+           <div class="col-md-12">
+            <section class="carousel-box-2 section-padding-sm">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col p-0">
+                          <!-- owl-carousel starts -->
+                          <div class="owl-2 owl-carousel owl-theme">
+                              <div class="item item1">
+                                      <div class="img-box">
+                                        <figure>
+                                          <img src="./images/service_1.jpg" height="230px" alt="">
+                                        </figure>
+                                      </div>
+                                      <div class="content-box">
+                                        <h4>Countertop Installation</h4>
+                                      <p>At Brisy Tiling, home improvement professionals can install and fix countertops throughout your home, including your bathroom and kitchen. Our professional carpenters can fix and install custom countertops of any type, shape and size. They also have the experience...</p>
+                                    <a href="" class="btn btn-danger" style="background-color: #ac2027;">Learn More</a>  
+                                    
+                                    </div>
+                              </div>
+                              <div class="item item1">
+                                      <div class="img-box">
+                                        <figure>
+                                          <img src="./images/service_2.jpg" height="230px" alt="">
+                                        </figure>
+                                      </div>
+                                      <div class="content-box">
+                                        <h4>Tile Flooring</h4>
+                                      <p>Tile is a durable and great-looking flooring options homeowners love. At  Brisy Tiling, we offer all types of floor tiling including Laminate, Ceramic, Slate, Cork, Porcelain, Marble tile floorings and more. Whether it’s cement board or a tile backer base, we have all the necessary materials ...</p>
+                                      <a href="" class="btn btn-danger" style="background-color: #ac2027;">Learn More</a>  
+                                      </div>
+                              </div>
+                              <div class="item item1">
+                                      <div class="img-box">
+                                        <figure>
+                                          <img src="./images/service_3.jpg" height="230px" alt="">
+                                        </figure>
+                                      </div>
+                                      <div class="content-box">
+                                        <h4>Kitchen Tiling</h4>
+                                      <p>Regardless of your kitchen design, Brisy Tiling will tile your kitchen floor that will have a sleek and stylish look and be incredibly durable with the added benefit of also being stain resistant. The most popular options for kitchen tiles include Porcelain floor tiles, Ceramic floor tiles and...</p>
+                                      <a href="" class="btn btn-danger" style="background-color: #ac2027;">Learn More</a>  
+                                    </div>
+                              </div>
+                              <div class="item item1">
+                                      <div class="img-box">
+                                        <figure>
+                                          <img src="./images/service_4.jpg" height="230px" alt="">
+                                        </figure>
+                                      </div>
+                                      <div class="content-box">
+                                        <h4>Kitchen Splasback</h4>
+                                      <p>Kitchen splashback adds the finishing touch to a kitchen. Brisy Tiling offers kitchen splashback installation and repair. The height and length of your kitchen backsplash will depend on your budget, design and overall look you want in the kitchen. Our contractors can take care of...</p>
+                                      <a href="" class="btn btn-danger" style="background-color: #ac2027;">Learn More</a>  
+                                    </div>
+                              </div>
+                          </div>
+                          <!-- owl-carousel ends -->
+                      </div>
+                  </div>
+              </div>
+          </section>
+           </div>
+      </div>
+    </section>
+    <!-- tiling-services ends -->
+
+
+    <!-- our-projects starts -->
+    <section class="our-projects section-padding-lg section-margin">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-md-12 text-center">
+          <h1 class="title">Our projects</h1>
+          </div>
+          <div class="col-md-3">
+            <div class="item">
+              <figure>
+                <img src="./images/project_1.jpg"  height="200px"  width="100%" class="img-fluid" alt="">
+              </figure>
+            </div>
+            </div>
+          <div class="col-md-3">
+            <div class="item">
+              <figure>
+                <img src="./images/project_2.jpg" height="200px" width="100%"  class= "img-fluid" alt="">
+              </figure>
+            </div>
+            </div>
+          <div class="col-md-3">
+            <div class="item">
+              <figure>
+                <img src="./images/project_3.jpg" height="200px" width="100%" class= "img-fluid" alt="">
+              </figure>
+            </div>
+            </div>
+          <div class="col-md-3">
+            <div class="item">
+              <figure>
+                <img src="./images/project_4.jpg" height="200px" width="100%" class= "img-fluid" alt="">
+              </figure>
+            </div>
+            </div>
+          <div class="col-md-3">
+            <div class="item">
+              <figure>
+                <img src="./images/project_5.jpg" height="200px" width="100%" class= "img-fluid" alt="">
+              </figure>
+            </div>
+            </div>
+          <div class="col-md-3">
+            <div class="item">
+              <figure>
+                <img src="./images/project_6.jpg" height="200px" width="100%" class= "img-fluid" alt="">
+              </figure>
+            </div>
+            </div>
+          <div class="col-md-3">
+            <div class="item">
+              <figure>
+                <img src="./images/project_7.jpg" height="200px" width="100%" class= "img-fluid" alt="">
+              </figure>
+            </div>
+            </div>
+          <div class="col-md-3">
+            <div class="item">
+              <figure>
+                <img src="./images/project_8.jpg" height="200px" width="100%" class= "img-fluid" alt="">
+              </figure>
+            </div>
+            </div>
+            
+
+          </div>
+        </div>
+    </section>
+    <!-- our-projects ends-->
+
+    <!-- testimonials starts -->
+    <section class="testimonials section-padding-lg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+          <h1 class="title">What our Client Say</h1>
+          </div>
+          <div class="col py-5">
+            <!-- owl-3 starts -->
+            <div class="owl-3 owl-carousel owl-theme">
+              <div class="item1">
+                      <div class="title-box py-2 d-flex text-center">
+                        <span class="line"></span>
+                        <span class="name-title">Georgia N
+                        </span>
+                      </div>
+                      <div class="content-box py-4">
+                      <p>Zaki did an amazing job at our house, bedding and leveling uneven floors and tiling the entire house. It wasn't the most simple job with the ground being unlevel and out of square but Zaki did an incredible job. We are so happy with his workmanship and work ethic. He was always on time and got the job done quickly.</p>
+                      </div>
+              </div>
+              <div class="item1">
+                      <div class="title-box py-2 d-flex text-center">
+                        <span class="line"></span>
+                        <span class="name-title">Leanne W</span>
+                      </div>
+                      <div class="content-box py-4">
+                      <p>I hired Brisy Tiling through Hi Pages, and would absolutely recommend them. The job was to remove exisiting tiles in the Alfresco area then to tile that area as well as our new 6m x 6m flyover patio extension. Zaki did an amazing job and we are thrilled with the outcome. Zaki is professional, thorough, knowledgeable, he was always on time & cleaned up after the job. Thanks Brisy Tiling</p>
+                      </div>
+              </div>
+              <div class="item1">
+                      <div class="title-box py-2 d-flex text-center">
+                        <span class="line"></span>
+                        <span class="name-title">Lisa B</span>
+                      </div>
+                      <div class="content-box py-4">
+                      <p>Professional, clean and tidy tradie. First class tiling work, would hire again. Thank you!</p>
+                      </div>
+              </div>
+          </div>  
+          <!-- owl-3 ends -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonials ends -->
+
+    <section class="section map-box">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28296.394977041502!2d152.9585302314282!3d-27.560978156835898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b914fc9d1e5c9d5%3A0x502a35af3de9460!2sOxley%20QLD%204075%2C%20Australia!5e0!3m2!1sen!2snp!4v1656309064611!5m2!1sen!2snp" width="100%" height="400" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- footer starts -->
+    <footer>
+      <div class="footer section-padding-lg">
+        <div class="container">
+          <div class="row footer-row g-3">
+              <!-- you could put all 3 boxes of footer in col directly as well. -->
+                <div class="footer-contact col-md-3">
+                  <h3 class="block-title">Brisy tiling</h3>
+                  <address>
+                    <p> Address: Oxley QLD 4075</p>
+                    <p>Cell:</p> <p><a href="tel:">0426 093 750 </a></p>
+                    <p> Email:</p> <p><a href="mailto:">brisytiling.au@gmail.com</a></p>
+                    <div class="social-links">
+                      <a href="https://www.facebook.com/brisy.tiling.3"><i  class="fa fa-facebook-f"></i></a>
+                      <a href="mailto:brisytiling.au@gmail.com"><i class="fa fa-envelope"></i></a>
+                    </div>
+                  </address>
+                </div>
+
+                <div class=" col-md-4 col-xs-12 col-sm-12 footer-newsletter">
+                  <h3 class="block-title">Get in touch</h3>
+             
+                    </style>
+                    <form action="#">
+                    <input type="text" name="name" placeholder="your name" class="form-control">
+                    <input type="email" name="email" placeholder="your email address" class="form-control">
+                    <input type="submit" value="Submit" class="form-control">
+                    </form>
+  
+                </div>
+
+                <div class=" col-md-3 col-xs-12 col-sm-12 footer-links text-end">
+                  <h3 class="block-title">Useful links</h3>
+                  <div class="links-box d-flex justify-content-end">
+                    <ul class="text-start">
+                      <li> <a href="">Home</a>
+                      <li> <a href="">about us</a>
+                      <li> <a href="">gallery</a>
+                        <li> <a href="">our projects</a>
+                      <li> <a href="">contact us</a>
+                      </ul>
+                  </div>
+                </div>
+
+                
+  
+            </div>
+
+             <!-- second row starts -->
+        
+        </div>
+        <!-- second row ends -->
+          </div>
+        </div>
+</footer>  
+
+    <!-- footer ends -->
+<style>
+  .footer-bottom{
+    background-color: black;
+    padding-top: 14px;
+    padding-bottom: 10px;
+  }
+  .footer-bottom p{
+    color: white;
+  }
+  .footer-bottom a{
+    color:#ac2027
+  }
+  .btn-primary-sm:hover{
+    color: white;
+  }
+  .owl-2 .item h4{
+    color:#ac2027
+  }
+  .footer{
+    padding-top: 4rem!important;
+    padding-bottom: 4rem!important;
+  }
+</style>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class=" copyright col-md-6">
+            <p>© 2022 Brisy Tiling. All rights reserved</p>
+          </div>
+          <div class="col-md-6 design-details" style="text-align:right;">
+            <p >Designed by <a style="text-decoration:none; font-weight:bold;" href="https://www.pixeldesignnepal.com.np/ ">Pixel Design</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<Style>
+
+.footer-bottom p{
+  margin:0;
+  font-size:0.9rem;
+}
+
+.footer-bottom{
+  padding:1rem;
+}
+
+@media screen and (max-width:900px){
+  .design-details, .copyright{
+    text-align:center !important;
+  }
+}
+
+  .tiling-services .content-box{
+    background-color: white;
+  }
+  .owl-2 figure{
+    margin-bottom: 0;
+  }
+  .content-box p{
+    font-size: 14px!important;
+    line-height: 23px!important;
+  }
+  .owl-2 .item h4{
+    padding-bottom: 2px;  ;
+  }.content-box p{
+    font-size: 1rem;
+  }
+  @media(max-width:900px){
+    .carousel-box-1 .item{
+      position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    }
+    .carousel-box-1 h2{
+      font-size: 1rem;
+      padding-bottom: 0;
+    }
+  .carousel-box-1 h6{
+    line-height: 30px;
+    font-size: 0.9rem;
+  }
+  .carousel-box-1 .btn{
+    font-size: 1rem;
+    margin-top: 0!important;
+  }
+  .header ul.navbar-nav > li:first-child{
+    padding-top: 1rem!important;
+  }
+  .carousel-box-1 .item::before{
+    background-size: cover;
+  }
+  .carousel-box-1 .owl-carousel .owl-stage-outer{
+max-height:      43vh;;
+  }
+  .testimonials .content-box{
+    width: 86%;
+  }
+  }
+</Style>
+
+    
+   <!-- Optional JavaScript; choose one of the two! -->
+
+   <!-- Option 1: Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+
+   <!-- Option 2: Separate Popper and Bootstrap JS -->
+   <!--
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-
+   IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-
+   cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   -->
+
+      <!-- jquery cdn for owl-carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    
+<!-- owl-carousel cdn  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+     <!-- fancybox cdn -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>    
+
+   <script>
+    Fancybox.bind('[data-fancybox="gallery"]', {
+ animated: false,
+ showClass: false,
+ hideClass: false,
+
+ Toolbar: false,
+
+ closeButton: "top",
+ click: false,
+ dragToClose: false,
+
+ Carousel: {
+   // Disable content slide animation
+   friction: 0,
+
+   // Disable touch guestures
+   Panzoom: {
+     touch: false,
+   },
+
+   Navigation: false,
+ },
+
+ Image: {
+   // Disable animation from/to thumbnail on start/close
+   zoom: false,
+
+   // Disable zoom on scroll event
+   wheel: false,
+
+   // Disable zoom on image click
+   click: false,
+
+   // Fit image horizontally only
+   fit: "contain",
+ },
+
+ // Center thumbnails only if draggable
+ Thumbs: {
+   minScreenHeight: 0,
+   Carousel: {
+     center: function () {
+       return this.elemDimWidth > this.wrapDimWidth;
+     },
+   },
+ },
+});
+
+$('.owl-1').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:false,
+    autoplay:false,
+    dots:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+
+$('.owl-2').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+
+$('.owl-3').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay:false,
+    dots:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+    
+   </script>
+
+
+   
+ </body>
+</html>

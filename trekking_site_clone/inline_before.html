@@ -1,0 +1,74 @@
+<!-- note: before and after works in both inline and block elments -->
+<!-- before and after elements are inline elements -->
+<!-- if position of before and after element is relative, content should not be empty
+and the width and height would be fit-content. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        i{
+            position:relative;
+            background:red;
+        }
+
+        i::before{
+            content:"";
+         position:absolute;
+         top:0;
+         left:0;
+         width:100%;
+         height:100%;
+         background:black;
+        }
+
+        a{
+            position:relative;
+        }
+
+        a::before{
+         content:"sfs";
+         position:relative;
+         background:black;
+        }
+        /* height and width are only working when i set position of after and before element
+        to absolute. If its relative, the height and width wont work. and also content need to 
+        be there if the position is relative. */
+        a::after{
+         content: "";
+         position:relative;
+         top:0;
+         left:0;
+         width:100px;  /* i tried to change to percent but that didnt help too.*/
+         height:200px;
+         background:black;
+        }
+
+        p{
+            position:relative;
+            background:red;
+        }
+
+        p::before{
+            content:"";
+         position:absolute;
+         top:0;
+         left:0;
+         width:100%;
+         height:300%;
+         background:black;
+        }
+    </style>
+</head>
+<body>
+    <!-- inline element -->
+    <i>xyz</i> <br><br>
+    <a href="#">abc</a> <br> <br>
+    <!-- block element -->
+    <p>def</p>
+
+</body>
+</html>

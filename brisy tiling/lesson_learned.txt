@@ -1,0 +1,7 @@
+1. if the styles wont change from computed section, change it from the inline css with important tag.
+2. if the effect wont apply, go to the end elemetn and apply. (for eg: a inside li tags are affected when a is
+ specified and not li for most of the properties depending upon their defualt value. if the default is inherit,
+  only then the properteis of the child will be affected when the property in parent is changed.)
+3. everything would not come in mind before you begin. But after you begin, changes, mistakes adn focus will create ideas and help mind to rewind previous knowledge.  
+4. to increase the size of carousel-background and to change the positoin of text infront of that background, target owl-item.
+5. inline-height would not work when img-fluid is used in the class.

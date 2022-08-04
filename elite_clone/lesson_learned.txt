@@ -1,0 +1,69 @@
+1. You cant apply pseudo element with inline elements.
+2. you cant change height and weight of inline elements.
+3. z-index by default for every element is 0.
+4. 1 rem = 16px;
+5. break points: normally, breaking points are space and -. if breakwrod is 
+set to break-word, the words will be broken at arbitrary points(word 
+will go until the given width and the word will break after that given width), so it wont
+overflow. 
+and if set to normal, the word would break only after the breaking points and may overflow. 
+6. if you have to calculate, you have to use calc() method. eg: font-size: calc(1rem+2px);
+7. more detail learning in inspect.
+8. word overflowing issues outside the column and container.
+9. margin applied to the before and after content will overlap and would not create a 
+space. for eg: there are two containers up and down. down container contain one div. i
+ applied before:: to that div and applied margin-top:-10px. Now that before part will
+  overlap the container on upside or if you have to apply make sure to give margin to 
+  that div so the beofre or after part wont overlap others.
+  So you should not apply margin to the pseudo elements.
+10. When it comes to margins and padding, browsers treat inline elements differently. You
+can add space to the left and right on an inline element, but you cannot add height
+to the top or bottom padding or margin of an inline element.
+11. to remove text-decoration of an anchor element, you have to apply to the css of 
+an anchor element and not the element is inside.For example:
+<div><a>learn more</a></div>.
+Normally, learn more would have underline coz its a link.
+Now you cant apply:
+div{
+    text-decoration: none;
+}
+But should do:
+a{
+    text-decoration: none;
+}
+11. breakpoints(space and hyphen)
+12. experience. compfort . precious was in one line because ihad no space given after dot , so word wrap was (normal(by default)). 
+13. z-index can be applied to inline element but make sure to specify position.
+
+14. you cant appply positoin relative and then another element absoulte for video element maybe ont sure.
+
+15. if the position is relative, if the element is applied 100px bottom,then 100px space is still occuied by the same element
+down even if the element goes up. Solution is absolute. 
+
+16. <div class="container my-0" >
+                  <!-- by default there is 15px padding in container. -->
+
+                  <div class="row g-5">
+                  <!-- margin works in row -->
+                  <!-- by default there is -15px margin in row-->
+17. In CSS, margin properties can utilize negative values (padding cannot).
+18. You should use important if you want to replace the styles of inbuild bootstrap classes because, bootstrap saas is inline.
+19. absolute will go to the top:0 and left:0 of immediate previous positioned element.
+20. z-index problem solved by putting negative index to the element to be on bottom. But
+you have to give z-index higher than the bottom element for the top element in case if you are dealing with before and after.
+However, with normal case, you can put the top elements z-index higher than the bottom one and the bottom one may have any z-index
+and is not necessary to be 0.   
+21. you can put float value while specifying left right etc.
+22. img is inline but becomes block once we set height and width of it.
+23. figure is inline element and has its default alignment and styling.
+24. col and flex items are same because row is flex. Both of them get aligned to the ledt side like float.
+25. it is a best practise to use main section name (lets say about us) before the actual element(lets say paragraph) while specifying in css.
+26. it is best to maintain consistency in class name of parent and child.
+eg:
+<section class="worldwide">
+      <div class="container worldwide-container"> //here (worldwide-container) makes it easy to understand if you have to apply effects in this element. Instead of specifying like (.worldwide .container)
+27. space is not removed by html. 
+eg:
+try this:Down below, between i and b element, try putting space and removing.
+<a href="#" class="btn"><i class="fa fa-reply-all" aria-hidden="true"></i> <b>get a quotes</b>
+

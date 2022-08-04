@@ -1,0 +1,751 @@
+           /*taken from internal css*/
+            
+
+/*for headings of each section*/
+.card{
+    box-shadow: 2px 2px #efefef;
+
+}
+
+.topic p{
+  font-weight:bold !important;
+  font-size:1.75rem !important;
+}
+
+p{
+  font-size: 0.9rem !important;
+    font-family: Helvetica, sans-serif !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    
+    }
+
+              .btn-primary{
+    border-radius: 20px;
+    padding: 10px 2rem;
+    background-origin: #0d6efd!important;
+}
+  
+     /* css for home page starts from here */
+     .button{
+       width:150px;
+       box-shadow: 1px 1px black; 
+       color: #fff;
+       background-color: #0d6efd!important;;
+    
+    color: #fff ;
+    border-radius: 30px;
+    padding: 10px 20px;
+    text-align:center;
+
+    border: 0;
+    text-shadow: navajowhite;
+    text-transform: capitalize;
+     }
+
+     
+     .navbar{
+       padding: 0;
+       text-transform: capitalize;
+     }
+
+    .top .container{
+        padding-top: 1rem;
+      }
+      .navbar-light .navbar-nav .nav-link.active{
+        background: #0d6efd!important;;
+          border-radius: 30px;
+        padding: 10px 20px;
+        color: white;
+      }
+      .nav-item{
+        margin-right: 1rem;
+      }
+      .navbar-light .navbar-nav .nav-link{
+        color: black;
+        font-weight: 600;
+      }
+      
+      .top p,.top i{
+        color:white;
+      }
+      .top p{
+        /* by default 1 rem and  em = 16px rem = root em */
+        font-size: 0.8rem; 
+      }
+      .top i{
+        padding-right: 10px;
+        vertical-align: text-top; 
+      }
+      .bottom{
+        position: relative;
+        z-index:0;
+      }
+      .our-services-for-hover table{
+        position: absolute;
+        z-index:1;
+        left: 59%;
+        bottom: 305px;
+        display:none;
+      }
+       /* not working maybe because navbar is the bootstrap class */
+      /* #services:hover .our-services-for-hover table{
+         display:block;
+       }  */
+     
+       
+       
+
+      
+      
+      .our-services-for-hover table tr td {
+       border: 1px solid #fff;
+       border-collapse: collapse;
+       background-color: #0d6efd!important;;
+       text-transform: capitalize;
+       color: #fff;
+       }  
+     .carousel-item{
+        height: 400px;
+      }
+      .carousel-caption{
+        top: 50%;
+        transform: translateY(-60%);
+       }
+       .carousel-box{
+        position: relative;
+        z-index:0;
+        }
+
+      .carousel-box::before{
+       content: "";
+       position: absolute;
+       /* height of content is relative to the element it is before */
+       height: 100%;
+       width: 100%;
+       top:0;
+       left:0;
+       background: rgba(0,0,0,0.6);
+       z-index:0;
+ }
+      
+  
+      /* div.carousel-customer-reviews-body{
+        height:400px;
+        background-color:black;
+      } */
+  
+      /* .carousel-overlay{
+        position:relative;
+        height:400px;
+        background-color: black;
+        opacity:50%;
+        bottom:400px;
+        
+  
+      } */
+  
+      
+    
+     /* .carousel-item p{
+      top: 50%;
+      transform: translateY(-150%);
+      bottom: initial;
+      
+     }
+     .carousel-item h5{
+       top:50%;
+       transform: translateY(-500%);
+       bottom: initial;
+     }
+  
+     .carousel-item .header-underline{
+       top:50%;
+       transform: translateY(-400%);
+       bottom: initial;
+     } */
+     .about-us-last h5{
+      color: #000 !important;
+     }
+     .about-us-last .blue-text{
+      color:#0d6efd !important;
+     }
+
+     .about-us-box{
+       margin:20px 0px;
+     }
+     .about-us-box h3{
+      text-transform: capitalize;
+      color: #0d6efd!important;;
+      margin-bottom: 11px;
+      text-align: left;
+      font-size: 1.4rem;
+      line-height: 30px;
+     }
+
+     .about-us-box p{
+       text-align:start;
+       margin-bottom: 25px;   
+       font-size: 13px;
+       line-height: 24px;
+     }
+
+
+     /*about us ends*/
+
+     /*service starts*/
+
+     .service-section .header-underline{
+      left: 25px !important;
+    top: 65px !important;
+     }
+
+     .service-section h3{
+      color:#212529 !important;
+     }
+
+     #slash{
+  
+  
+
+     }
+
+    
+
+     .services-body img{
+       height: 13rem;
+       width: 100%;
+       object-fit: cover;
+     }
+    
+     .image-box{
+       position:relative;
+      
+     }
+     .services-body h2{
+      font-size: 1rem;
+      font-weight: bold;
+  
+      color: #0d6efd!important;;
+      padding-top: 1rem;
+     }
+.our-services,.services-body{
+  background-color: #F4F7F7;
+}
+     .services-body p{
+       padding: 7px;
+       font-size: 15px;
+       line-height: ;line-height: 23px;
+font-size: 15px;
+     }
+     .btn-primary{
+       font-size: 15px;;
+     }
+     .boxxed{
+       background-color: white;
+       padding: 10px 2px;
+       height: 17rem !important;
+     }
+
+     .image-box::before{
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 90%;
+      background-color: #0d6efd!important;;
+      top: 2.4rem;
+      right: -0rem;
+      z-index: -1;
+     }
+
+     .our-services-header p{
+       display: inline-block;
+       font-weight: bold;
+       font-size: 1.5rem;
+     }
+
+
+  /*service ends*/
+
+
+     .our-projects-header p{
+      display: inline-block;
+      font-weight: bold;
+      font-size: 1.5rem;
+     }
+     .customer-reviews p{
+      display: inline-block;
+      font-weight: bold;
+      font-size: 1.5rem;
+     }
+     .our-projects{
+       margin-bottom:20px;
+     }
+  
+  
+    
+     .para-color-sky-blue{
+       color: #0d6efd!important;;
+
+     }
+  
+     .header-underline{
+      background-color: #0d6efd!important;;
+;
+      width:100px;
+      height: 4px;
+      margin:auto;
+      display:block;
+      margin-top: -15px;
+     }
+     .carousel-box 
+      
+    
+     /* why is this not working?  
+      .carousel-caption .header-underline{
+       margin-top: -10px;
+     }
+  
+     #margin-top-section{
+       margin-top: 30px;
+     }
+     .testimonial-customer-reviews-body{
+       height: 350px; 
+       box-shadow: 2px 2px rgb(243, 245, 241);
+       border: 2px solid rgb(243, 245, 241);
+       z-index:1;
+     }
+  
+     img.testimonial-circle{
+       
+       border-radius:50%;
+       z-index: 2;
+       margin:auto;
+       position: relative;
+       bottom:425px;
+       display: block;
+  
+     }
+  
+     .testimonial-paragraph-address{
+     position: relative;
+     bottom:375px;
+     text-align: center;
+     }
+     .testimonial-paragraph-address h3{
+     color: #0d6efd
+     } */
+
+    
+    
+     
+     
+      .para {
+          text-align: center;
+      }
+      .para p{
+          font-weight: normal;
+          font-size:14px;
+          text-align: center;
+      }
+     
+      .customer-reviews{
+          background-image: url(images/testimonial_bg.jpg);
+          padding-top: 3rem;
+          padding-bottom: 3rem;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          position: relative;
+          z-index:0
+      }
+      .customer-reviews-header{
+        margin-bottom:2rem;
+        }
+
+      .customer-reviews::before{
+          content: "";
+          position: absolute;
+          /* height of content is relative to the element it is before */
+          height: 100%;
+          width: 100%;
+          top:0;
+          left:0;
+          background: rgba(0,0,0,0.6);
+          z-index:0 ;
+      }
+  
+     .customer-reviews-body, .customer-reviews-header{
+          position: relative;
+      }
+      .customer-reviews-card{
+        position: relative;
+        background: #ececf2;
+        padding: 10px 30px;
+        padding-top: 3.4rem;
+        border-radius: 5px;;
+        margin-top: 4rem;
+        box-shadow: 5px 5px #ececf2;
+        text-align: center;
+        height: 250px;
+      }
+
+      .customer-reviews-card .images{
+        /* absoulte would not take any spaces and would just overlap 
+        before the one next to it. */
+    
+          position: absolute;
+          left: 15px;
+          top:-36px;;
+      }
+      .customer-reviews-card .para{
+        bottom:20px;
+      }
+
+      .customer-reviews-header #our{
+        color: #000;
+      }
+      .customer-reviews-header p{
+          text-transform: capitalize;
+      }
+      .name{
+        color:#0d6efd;
+        font-weight: bolder;
+        font-size: large;
+      }
+      /*footer css*/
+
+     /* footer {
+      background: blue !important;
+      position: relative !;
+      bottom:100px !important;
+     }*/
+
+      footer{
+        position: relative;
+        background-image: url("./images/footer_bg.jpg");
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: rgb(233, 224, 224);
+        
+        
+        
+      }
+      footer a{
+        display:block;
+        text-decoration:none;
+        color: rgb(233, 224, 224);
+        
+
+
+        }
+        footer ul{
+          list-style-type: none;
+        }
+
+      footer::before{
+        content: "";
+        position: absolute;
+        /* height of content is relative to the element it is before */
+        height: 100%;
+        width: 100%;
+        top:0;
+        left:0;
+        background: rgba(0,0,0,0.85);
+        z-index:1;
+           
+      }
+      .footer-send-message, .footer-our-services, 
+      .footer-copyright, .footer-contact-us{
+        z-index:2;
+        margin-top: 10px;
+      }
+
+     
+
+   .footer-send-message-body .input{
+    padding: 0px !important;
+  }
+
+
+  footer .footer-our-services-body  li{
+    padding-bottom: 10px;
+    list-style-type: disc;
+  }
+
+      footer input{
+        width:300px;
+        height:40px;
+        background-color: rgb(62, 62, 65);
+        border-radius: 5px;
+        border:none;
+        display:inline block !important;
+        padding:0 !important;
+      }
+     footer  textarea{
+      display:inline-block;
+        padding:0 !important;
+        width:300px;
+        background-color: rgb(62, 62, 65);
+        border-radius: 5px;
+        text-transform: capitalize;
+      }
+
+
+
+      /* this is not working. */
+      /* .footer-sections{
+       z-index:2;
+      } */
+      
+   
+   .footer-contact-us{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+   }
+   .footer-sections{
+    padding-top: 1rem;
+   }
+  /* this works:
+  
+  }*/
+  ::placeholder{
+    color: white;
+  }
+
+  /* this wont work
+  textarea[placeholder]{
+    color:red !important;
+  };*/
+   .footer-send-message-body .input{
+      margin-bottom: 5px;
+      }
+      .footer-send-message-body{
+        position:relative;
+        bottom:1.2rem;
+      }
+      .footer-send-message-body .input{
+      position:relative;
+      text-transform:capitalize;
+      padding:0.30rem 0.5rem !important;
+      border:none;
+
+
+
+      
+
+      }
+       
+      
+      
+      .footer-send-message-body{
+        position:relative;
+        bottom:1.2rem;
+      }
+      
+
+      .footer-contact-us p{
+        display: inline-block;
+        }
+        
+        .send-message-body{
+          margin-top: 0px;
+        }
+
+        footer div.copyright-info{
+        text-transform: capitalize;
+        }
+      /*footer css ends here*/
+
+      /*contact.php page css*/
+.sadadd i{
+  padding-right: 1rem;
+  font-size: 1.4rem;
+  color: #0D6EFD;
+
+}
+
+.sadadd{
+  background:rgb(231, 234, 241);
+  height:292px;
+  border-radius:5px;
+  position:relative;
+  left:75px;
+  top:-2px;
+  padding-top:-5px;
+
+}
+
+.sadadd .footer-contact-us-body{ background-color: rgb(231, 234, 241); }
+ 
+ footer .tht     {
+  padding-top: 10px;
+  }
+
+  footer h2{
+  font-size: 1.5rem;
+padding-bottom: 1rem;
+font-weight: bolder;
+ }
+
+  ::placeholder{
+    color: white;
+
+  }
+
+  footer .tht{
+    padding-left: 3rem;
+  }
+
+
+
+ 
+.sadadd   .footer-contact-us-body{
+background-color: rgb(231, 234, 241);
+padding: 15px;
+width: 100%;
+}
+    
+        ul {
+          padding-left: 0;
+      }
+              /*contact.php page css ends here*/
+
+      
+
+
+   
+    /* .footer-sections{
+        z-index:1;
+    } */
+    /* footer .footer-sections{
+        z-index:1;
+    } */
+    /* css for home page ends here */
+
+    /* css for our services pages starts from here. */
+    .our-services-page-body button{
+      margin-top: 20px;
+      margin-bottom:20px;
+    }
+
+    .our-services-page-body h1, .our-services-page-body h2{
+      text-transform: capitalize;
+      color:#0d6efd!important;
+    }
+
+    .our-services-page-body p{
+      margin-top: 2rem;
+    }
+    
+    /* css for our services pages ends here. */
+
+    /* css for about us page starts from here. */
+    
+    /* css for about us page starts from here. */
+
+
+    /* css for reviews */
+
+    .grey-small{
+      color:grey;
+      font-size:smaller;
+    }
+    .grey-medium{
+      color:grey;
+      font-size:smaller;
+    }
+    span.stars{
+      color: orange;
+    }
+    .reviews-box img{
+      float: left;
+      width: 75px;
+      height: 75px;
+    }
+    .reviews-box h1, .reviews-box h3{
+      text-transform: capitalize;
+      }
+
+      .reviews-head{
+        margin-top:20px;
+        margin-bottom:20px;
+
+      }
+
+      .reviews-head h1{
+        color: #0d6efd!important;;
+        font-size:50px;
+      }
+    /* css for reveiws end here */
+
+ /* csss for breadcrumb starts from here   */
+ .bread{
+  background: url(images/carpet_cleaning.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed
+} .bread::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top:0;
+  left:0;
+  background: rgba(0,0,0,0.5);
+}
+.bread h1{
+  color: white;
+  position :relative;
+  z-index: 111;
+}
+  
+  /* css for breadcrumb ends here */
+
+
+   /* css for contact starts here  */
+   .contact h1{
+text-transform: uppercase;
+color:#0d6efd!important;;
+margin-bottom:2rem;
+   }
+
+   .contact p{
+     margin-bottom: 2rem;
+      
+   }
+   .contact input{
+     text-transform: capitalize;
+   }
+   form {
+     margin-bottom:2rem;
+   }
+   .contact input.input{
+    background-color: rgb(231, 234, 241);
+    border:none;
+    height: 50px;
+    text-align:start;
+    display:flex;
+    align-items:center;
+    text-transform: capitalize;
+    border-radius:5px;
+    }
+       
+    .contact textarea{
+      background-color: rgb(231, 234, 241);
+      border:none;      
+      text-transform: capitalize;
+      border-radius:5px;
+       }
+       
+       
+      /* css for contact ends here  */

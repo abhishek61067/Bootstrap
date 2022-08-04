@@ -1,0 +1,6 @@
+1. you can set the height and width of the image in the carousel rather than worrying about the equal size of the images in the folder. For setting height and width of all images in the carousel-box, change height and width of carousel-inner class and change height and width of img inside that carousel-inner to fit-content or object-fit:cover.
+you may have to set important for some properties in some cases.
+
+2. sometimes, img-responsive(width:100%, height:auto) would not let you set height and width of the images. In that case use important.
+
+3. sometimes the col in a row would not align symmetrically if the bottom of one col is more down than other, so in that case make the bottom of each col symmetric using bottom property to that col.

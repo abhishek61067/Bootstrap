@@ -1,0 +1,2 @@
+phone: 4 3 3. 
+phone no starting with digit 4 is landline and others are mobile number. dont use country code in phn number.

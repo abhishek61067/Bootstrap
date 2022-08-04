@@ -1,0 +1,31 @@
+Name:   Zaki Shen
+
+
+
+business name: brisy tiling.
+Contact No: - 0426 093 750
+Email: brisytiling.au@gmail.com
+Address:      Oxley QLD 4075
+ABN : 5621564127
+
+social links:
+1. fb:https://www.facebook.com/brisy.tiling.3
+2. gmail: brisytiling.au@gmail.com
+
+services:
+1. 
+
+
+
+
+
+technical details:
+1. h1 used in each section as title.
+2. p.line-height:
+3.section-padding:
+4.section-padding-sm:
+5.section-margin:
+6.section-margin-sm:
+7.p.font-family:
+8.headings.font-family:
+9.p.font-size:

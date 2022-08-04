@@ -1,0 +1,179 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+
+@media (min-width: 1921px) and (max-width: 3500px) {
+
+}
+
+@media (min-width: 1500px) and (max-width: 1920px) {
+
+}
+
+
+@media (min-width: 1200px) and (max-width: 1249px) {
+.abn p span{ margin-left:12px;}
+}
+
+@media (min-width: 1200px) and (max-width: 1222px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+.logo img{ width:400px; height:79px;}
+/*.header-rgt{ margin-top:17px;}*/
+.header-rgt span{ font-size:14px;}
+.header-rgt span .fa{ padding:10px 8px; margin-right:10px;}
+.slider .carousel-caption{ bottom:12%;}
+.about h3{ margin-top:0;}
+.services-box{ min-height:460px;}
+.navbar-default .navbar-nav > li > a{ margin-right:60px;}
+.abn p{ font-size:14px; margin-top:20px;}
+.abn p span{ margin-left:12px;}
+.header-top p span{ display:none;}
+.social .fa{ padding:0 8px;}
+.services h4{ margin-top:0;}
+
+.top-email img { height:80px;}
+}
+
+@media (min-width: 1025px) {	
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (min-width: 992px) {	
+.small-banner{ display:none !important;}
+}
+
+@media (max-width: 991px) {
+.logo{ text-align:center; border-bottom:1px solid #ccc; padding-bottom:10px;}
+.logo img{ width:400px; height:79px;}
+/*.header-rgt{ margin-top:15px;}*/
+.large-banner{ display:none !important;}
+.wel-img{ margin-top:30px;}
+.clients{ min-height:auto;}
+.footer-top .col-sm-6{ min-height:275px;}
+.map{ margin-top:30px;}
+.other-ser h4{ margin-top:20px;}
+.services-box{ min-height:445px;}
+.about h3{ margin-top:20px;}
+.abn p{ text-align:center; background:#000; padding:10px; margin:0;}
+}
+
+
+@media (min-width: 768px) {
+.navbar-brand{ display:none;}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.get-a-quote{ padding:15px;}
+.slider .carousel-caption{ width:70%;}
+.navbar-default .navbar-nav > li > a{ margin-right:30px;}
+.header-top p span{ display:none;}
+}
+
+
+
+@media (max-width: 767px) {	
+.top-slog{ display:none;}
+.header-top .social{ text-align:left;}
+.nav-sec .navbar-brand{ padding-top:15px; color:#fff;}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{ border-color:#fff;}
+.nav-sec .nav{ margin:10px 0;}
+.navbar-default .navbar-nav > li{ padding:10px 0;}
+.slider .carousel-caption{ bottom:10%; width:60%;}
+.slider .carousel-caption h1{ font-size:42px;}
+.top-a{ padding:30px 0;}
+.top-b{ padding:30px 0;}
+.bottom-a{ padding:30px 0;}
+.bottom-b{ padding:30px 0 70px 0;}
+.footer-top{ padding:20px 0 30px 0;}
+.sub-banner{ height:200px;}
+.sub-banner h2{ padding-top:90px;}
+.sub-content{ padding:30px 0;}
+.services-box{ min-height:auto;}
+
+}
+
+
+@media (max-width: 665px){
+.slider .carousel-caption{ bottom:15%; width:70%;}
+.slider .carousel-caption h1{ font-size:30px;}
+.home-ser-tit h3{ font-size:14px;}
+.clients{ text-align:center;}
+.clients .col-xs-3, .clients .col-xs-9{ width:100%;}
+.clients h5{ text-align:center;}
+}
+
+@media (max-width: 567px){
+
+}
+
+@media (min-width: 566px){
+
+}
+
+@media (max-width: 565px){
+.header-rgt{ display:none;}
+.logo{ border:none; padding-bottom:0;}
+.slider .carousel-caption{ bottom:12%; width:80%;}
+.slider .carousel-caption h1{ font-size:28px;}
+.home-ser-cls .col-xs-6{ width:100%;}
+.footer-top .col-xs-6{ width:100%;}
+.footer-bottom .col-xs-6{ width:100%;}
+.footer-bottom .text-right{ text-align:left;}
+.services .cato li{ width:100%;}
+.footer-top .col-sm-6{ min-height:auto;}
+.footer-top h6{ margin-top:20px;}
+}
+
+
+
+@media (min-width: 481px){
+
+}
+@media (max-width: 480px) {
+.sm-cont .col-xs-6{ width:100%;}
+.brk{ margin-top:10px !important;}
+.logo img{ width:100%; height:auto;}
+.slider .carousel-caption p{ display:none;}
+.slider .view-more a{ padding:10px 8px; margin-right:8px;}
+.slider .call-us a{ padding:8px 8px;}
+.slider .carousel-caption h1{ font-size:24px;}
+.gallery-image:hover .cap-option{ padding-top:27%;}
+.gallery-main a i{ font-size:25px;}
+.sub-banner{ height:150px;}
+.sub-banner h2{ padding-top:60px;}
+.gallery-image:hover .cap-option{ padding-top:25%;}
+.gallery-main a i{ font-size:25px;}
+.abn p span{ margin-left:0;}
+}
+@media (min-width: 481px) {
+.abn p br{ display:none;}
+}
+@media (max-width: 400px){
+.social .fa{ padding:0 8px;}
+.get-a-quote{ padding:15px 18px;}
+.enter-code{ width:39px !important;}
+.slider .view-more{ display:none;}
+.slider .carousel-caption{ bottom:15%;}
+.slider .carousel-caption h1{ font-size:22px;}
+.cap-btn{ margin-top:10px;}
+}
+
+@media (min-width: 320px) and (max-width: 380px) {
+
+}
